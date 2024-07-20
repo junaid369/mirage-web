@@ -1,0 +1,161 @@
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleUp {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scaleDown {
+    from {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  
+  .animation {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .animation-slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+  }
+  .animation-slideInTop {
+    animation: slideInTop 1s ease-in-out;
+  }
+  .animation-slideInBottom {
+    animation: slideInBottom 1s ease-in-out;
+  }
+  .animation-scaleUp {
+    animation: scaleUp 1s ease-in-out;
+  }
+  
+  .animation-scaleDown {
+    animation: scaleDown 1s ease-in-out;
+  }
+  .animation-ZoomInOut {
+    animation: zoomInOut 1s ease-in-out ;
+  }
+  
+
+  
+
+  /* @keyframes rotateIn {
+    from {
+      transform: rotate(-360deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes rotateOut {
+    from {
+      transform: rotate(0);
+      opacity: 1;
+    }
+    to {
+      transform: rotate(360deg);
+      opacity: 0;
+    }
+  } */
+
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } */
+
+  /* @keyframes slideInTopScaleUp {
+    from {
+      transform: translateY(-100%) scale(0.5);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }   */
+    
+    
+    

@@ -1,0 +1,8 @@
+.bg-cover {
+    transition: transform 0.5s ease;
+  }
+  
+  .bg-cover:hover {
+    transform: scale(1.1) translateX(10px);
+  }
+  
