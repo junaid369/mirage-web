@@ -1,6 +1,10 @@
 import React from "react";
 import "../ContactUs/Contact.css";
 import Footer from "../../components/Footer/Footer";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function ContactUs() {
   return (
@@ -56,12 +60,12 @@ function ContactUs() {
         </div>
 
         {/* Content */}
-        <div className="relative container  py-44">
-          <div className="md:flex md:mx-36 md:mb-30">
-            <div className="md:w-2/6 max-sm:mb-8">
+        <div className="relative  py-28 max-sm:py-14 ">
+          <div className="md:flex max-lg:justify-center max-lg:items-center md:mx-36 lg:mx-36 md:mb-30 max-sm:mx-5">
+            <div className="md:w-3.5/6 max-sm:mb-8">
               <h2 className="text-teal-800 font-semibold">GET IN TOUCH</h2>
-              <div className="max-w:sm">
-                <h1 className="text-3xl font-serif text-black  pt-6">
+              <div className="md:max-w:sm">
+                <h1 className="max-sm:text-2xl  text-3xl font-serif   text-black  pt-6 md:max-w-md">
                   Connecting for a Stronger Financial Future
                 </h1>
               </div>
@@ -70,23 +74,13 @@ function ContactUs() {
                 velit efficitur mattis
               </p>
             </div>
-            <div className="md:w-4/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
+            <div className="md:w-2.5/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
               <div className="text-center max-sm:mb-7 ">
                 <div className="text-teal-800  flex flex-col items-center justify-center  mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-6m-2-2H7a2 2 0 01-2-2V10a2 2 0 012-2h2m4-2V4a2 2 0 00-2-2H7a2 2 0 00-2 2v2m2 2h2a2 2 0 002-2V4m0 0H9a2 2 0 00-2 2v2"
-                    />
-                  </svg>
+                  <i
+                    aria-hidden="true"
+                    className="mdi mdi-map-marker text-5xl"
+                  ></i>
                   <h3 className=" text-lg font-medium pt-5">Head Office</h3>
                 </div>
                 <p className="text-gray-600">
@@ -95,20 +89,7 @@ function ContactUs() {
               </div>
               <div className="text-center max-sm:mb-7 ">
                 <div className="text-teal-800 flex flex-col items-center justify-center mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 12H5a2 2 0 01-2-2V8m2-3l7.89 5.26a2 2 0 002.22 0L19 5z"
-                    />
-                  </svg>
+                  <i aria-hidden="true" className="mdi mdi-email text-5xl"></i>
                   <h3 className="ml-2 text-lg font-medium pt-5">Email Us</h3>
                 </div>
                 <p className="text-gray-600">
@@ -119,20 +100,10 @@ function ContactUs() {
               </div>
               <div className="text-center max-sm:mb-7">
                 <div className="text-teal-800 flex flex-col  items-center justify-center mb-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5.121 18.364l-.707-.707c-1.562-1.562-2.121-3.748-1.586-5.828A9.994 9.994 0 0112 5V3.005c-.294.03-.588.072-.882.126a9.993 9.993 0 00-7.516 7.516c-.054.294-.096.588-.126.882H5.12z"
-                    />
-                  </svg>
+                  <i
+                    aria-hidden="true"
+                    className="mdi mdi-phone-in-talk text-5xl"
+                  ></i>
                   <h3 className="ml-2 text-lg font-medium pt-5">Let's Talk</h3>
                 </div>
                 <p className="text-gray-600">
@@ -146,10 +117,10 @@ function ContactUs() {
 
           {/* form start */}
 
-          <div className="mx-36 md:flex gap-3">
+          <div className="md:mx-36 lg:mx-36 max-sm:mx-5 md:flex gap-3">
             <div className="mt-16  md:w-4/6">
-              <div className="bg-white shadow-md rounded-lg p-8 h-full">
-                <h2 className="text-2xl font-bold text-black">
+              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 max-lg:p-28 h-full">
+                <h2 className="text-3xl font-serif text-black">
                   Send us a message
                 </h2>
                 <p className="text-gray-600 mt-2">
@@ -158,36 +129,41 @@ function ContactUs() {
                   maximus feugiat suscipit eleifend a letius sequis mod.
                 </p>
                 <form className="mt-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-lg:gap-14 ">
                     <input
                       type="text"
                       placeholder="Your Name"
-                      className="p-3 border rounded-md"
+                      className="p-3 border rounded-md bg-gray-200 max-lg:h-16"
                     />
                     <input
                       type="text"
                       placeholder="Your Company"
-                      className="p-3 border rounded-md"
+                      className="p-3 border rounded-md bg-gray-200 max-lg:h-16"
                     />
                     <input
                       type="text"
                       placeholder="Your Phone"
-                      className="p-3 border rounded-md"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 max-lg:mb-14"
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="p-3 border rounded-md"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16  max-lg:mb-14"
                     />
                   </div>
                   <textarea
+                    placeholder="Your Subject"
+                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 max-lg:mb-14 max-lg:h-16"
+                    rows="1"
+                  ></textarea>
+                  <textarea
                     placeholder="Your Message"
-                    className="p-3 border rounded-md w-full mt-4"
+                    className="p-3 border rounded-md w-full mt-4 bg-gray-200 max-lg:mb-14 max-lg:h-16"
                     rows="5"
                   ></textarea>
                   <button
                     type="submit"
-                    className="bg-teal-800 text-white px-6 py-3 rounded-md mt-4"
+                    className="bg-teal-800 text-white px-6 py-3 rounded-md mt-4 w-full"
                   >
                     Send Message
                   </button>
@@ -195,31 +171,70 @@ function ContactUs() {
               </div>
             </div>
             <div className="md:w-2/6 mt-16">
-              <div className="relative ">
+              <div className="relative overflow-hidden">
                 <img
-                  className="object-contain"
+                  className="object-contain transform transition-transform duration-300 ease-in-out hover:translate-x-6 hover:scale-105"
                   src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/im-so-glad-you-asked-shot-of-a-young-man-using-a-headset-and-computer-in-a-modern-office-.jpg"
                   alt=""
                 />
-                <div className="absolute top-0 left-0 flex justify-center items-center w-full h-full">
-                  <h1 className="text-white text-4xl">TEXT here</h1>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gray-950 bg-opacity-30"></div>
+                {/* Content */}
+                <div className="absolute bottom-10 left-0 flex flex-col justify-center items-center w-full h-auto pb-4">
+                  <h1 className="text-white text-3xl font-serif text-center">
+                    Effortless Connectivity, Financial Growth.
+                  </h1>
                 </div>
               </div>
+            </div>
+          </div>
 
-              {/* <div className="relative">
-  <img
-    className="object-contain w-full"
-    src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/im-so-glad-you-asked-shot-of-a-young-man-using-a-headset-and-computer-in-a-modern-office-.jpg"
-    alt=""
-  />
-  <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-    <h1 className="text-white text-2xl font-bold">TEXT here</h1>
-  </div>
-</div> */}
+          <div className="md:flex md:mx-28 max-sm:mx-5 justify-center items-center py-12 md:gap-5">
+            <div className="title">
+              <h1 className="text-black text-4xl  max-sm:text-2xl font-serif max-sm:text-center">
+                Follow our social media
+              </h1>
+            </div>
+
+            <hr className="border-black md:ml-6 md:mt-1  mt-4 w-40  max-sm:ml-28" />
+            <div className="socialmedia icons flex justify-center items-center gap-4  max-sm:mt-5">
+              <div className="border-teal-800 border-2 h-10 w-10 rounded-full flex justify-center items-center ">
+                <a
+                  href="
+            "
+                >
+                  <FaFacebookF className="text-2xl text-teal-800" />
+                </a>
+              </div>
+              <div className="border-teal-800 border-2 h-10 w-10 rounded-full flex justify-center items-center ">
+                <a
+                  href="
+            "
+                >
+                  <FaXTwitter className="text-2xl text-teal-800" />
+                </a>
+              </div>
+              <div className="border-teal-800 border-2 h-10 w-10 rounded-full flex justify-center items-center ">
+                <a
+                  href="
+            "
+                >
+                  <FaLinkedinIn className="text-2xl text-teal-800" />
+                </a>
+              </div>
+              <div className="border-teal-800 border-2 h-10 w-10 rounded-full flex justify-center items-center ">
+                <a
+                  href="
+            "
+                >
+                  <FaInstagram className="text-2xl text-teal-800" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

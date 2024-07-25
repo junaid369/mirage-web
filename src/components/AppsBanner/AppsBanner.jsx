@@ -113,26 +113,86 @@ function AppsBanner() {
 
       {/* clint review */}
 
-      <section className="clint mt-24 mb-24">
-        <div className="mx-24 flex">
-          <div className="w-3/6 flex-col">
-            <h1 className="text-4xl font-serif">Our Clients Reviews</h1>
-            <div className=" mt-3">
-              <p className="text-md max-w-md text-gray-600 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </div>
-            <div className="mt-5">
-              <button className="bg-teal-800 text-white h-8 w-32 text-center font-semibold rounded-sm">
-                Start Trading
-              </button>
+      <section className="clint mt-24 mb-24 max-sm:mt-96">
+        <div className="md:mx-24 max-sm:mx-5 md:flex gap-36">
+          <div className="w-6/6 md:w-2/6 ">
+            <div className="flex flex-col">
+              <h1 className="text-4xl font-serif gradient-text">Our Clients Reviews</h1>
+              <div className="mt-3">
+                <p className="text-md text-gray-600 ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
+                  leo.
+                </p>
+              </div>
+              <div className="mt-5">
+                <button className="btn-hover-gradient text-white h-8 w-32 text-center font-semibold rounded-sm">
+                  Start Trading
+                </button>
+              </div>
             </div>
           </div>
-          <div className="w-3/6">
-            <div className="flex gap-3">
-              <div className="content-1 bg-gray-200 h-56 w-80 rounded-md"></div>
-              <div className="content-1 bg-gray-200  h-56 w-80 rounded-md"></div>
+          <div className="md:w-4/6 ">
+            <div className="md:flex gap-3 max-sm:mt-10">
+              <div className=" content-1 bg-gray-200 h-64 w-96 rounded-md max-sm:mb-10 max-sm:ml-2 ">
+                <div className="p-5 mt-5 ">
+                  <div className="contents">
+                    <p className="text-gray-400 ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                      dapibus leo. Ut elit tellus, luctus nec ullamcorper
+                      mattis, pulvinar dapibus leo.
+                    </p>
+                  </div>
+                  <div className="image flex mt-3 gap-3">
+                    <div className="rounded-full  border-4 border-white">
+                      <img
+                        className="rounded-full h-14 w-14"
+                        src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="userDetails pt-3">
+                      <h1 className="text-black text-md font-medium text-sm">
+                        Root Stanley
+                      </h1>
+                      <h1 className="gradient-text font-medium text-sm">
+                        CEO MACHINEX
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className=" content-1 bg-gray-200 h-64 w-96 rounded-md max-sm:mb-10 max-sm:ml-2 ">
+                <div className="p-5 mt-5 ">
+                  <div className="contents">
+                    <p className="text-gray-400 ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                      dapibus leo. Ut elit tellus, luctus nec ullamcorper
+                      mattis, pulvinar dapibus leo.
+                    </p>
+                  </div>
+                  <div className="image flex mt-3 gap-3">
+                    <div className="rounded-full  border-4 border-white">
+                      <img
+                        className="rounded-full h-14 w-14"
+                        src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/5.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="userDetails pt-3">
+                      <h1 className="text-black text-md font-medium text-sm">
+                        Root Stanley
+                      </h1>
+                      <h1 className="gradient-text font-medium text-sm">
+                        CEO MACHINEX
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="content-2 bg-gray-200  h-56 w-80 rounded-md max-sm:ml-8 flex flex-col"></div> */}
             </div>
           </div>
         </div>

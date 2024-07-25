@@ -39,10 +39,10 @@ function Abouts() {
           className="flex flex-col w-6/6 md:w-3/6 animationRight"
           ref={addElement}
         >
-          <h6 className=" pl-10 md:pl-24 mt-10 text-teal-600 text-md font-semibold">
+          <h6 className=" pl-10 md:pl-24 mt-10 gradient-text text-md font-semibold">
             Our Value
           </h6>
-          <h4 className="text-black pl-10 md:pl-24 mt-3  text-xl md:text-4xl font-semibold">
+          <h4 className="gradient-text pl-10 md:pl-24 mt-3  text-xl md:text-4xl font-semibold">
             Your Success is Our Priority
           </h4>
           <p className="pl-10 md:pl-24 mt-5 text-gray-500">
@@ -51,14 +51,14 @@ function Abouts() {
             leo.
           </p>
           <div className="flex ml-10 md:ml-24 mt-8">
-            <div className=" w-1/6 bg-teal-800 rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
+            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
               <i
                 aria-hidden="true"
                 className="mdi mdi-rocket-launch text-white text-4xl"
               ></i>
             </div>
             <div className="mx-3 w-2/3">
-              <h2 className="text-2xl">Our Vision</h2>
+              <h2 className="text-2xl gradient-text">Our Vision</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -66,14 +66,14 @@ function Abouts() {
             </div>
           </div>
           <div className="flex ml-10 md:ml-24 mt-8">
-            <div className=" w-1/6 bg-teal-800 rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
+            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
               <i
                 aria-hidden="true"
                 className="mdi mdi-bullseye-arrow text-white text-4xl"
               ></i>
             </div>
             <div className="mx-3 w-2/3">
-              <h2 className="text-2xl">Our Vision</h2>
+              <h2 className="text-2xl gradient-text">Our Vision</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -86,7 +86,7 @@ function Abouts() {
       {/* end */}
 
       {/* first arab banner */}
-      <section className="bg-teal-900 md:flex mx-2 md:mx-10 rounded-lg mt-5 mb-20">
+      <section className="bg-gradient-to-br from-blue-500   to-red-900 md:flex mx-2 md:mx-10 rounded-lg mt-5 mb-20">
         <div
           className="w-4/6  flex flex-col justify-center items-center max-sm:hidden animationLeft"
           ref={addElement}
@@ -98,7 +98,7 @@ function Abouts() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
-          <button className="mx-10 px-8 mt-4 py-4 bg-teal-900 text-white font-bold rounded-full hover:border-white hover:border-2">
+          <button className="mx-10 px-8 mt-4 py-4 bg-gradient-to-br from-blue-500   to-red-900 text-white font-bold rounded-full gradient-border-inner:border-white hover:border-2">
             Start Trading Now!
           </button>
         </div>
@@ -117,7 +117,7 @@ function Abouts() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
           </p>
-          <button className="mb-10 mx-10 px-8 mt-4 py-4 bg-gray-500 text-white font-bold rounded-full hover:bg-teal-600">
+          <button className="mb-10 mx-10 px-8 mt-4 py-4   text-white font-bold rounded-full  bg-gradient-to-br from-blue-500   to-red-900 gradient-border-inner:border-white hover:border-2">
             Start Trading Now!
           </button>
         </div>

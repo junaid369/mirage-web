@@ -1,0 +1,9 @@
+/* styles/globals.css or your CSS file */
+.btn-hover-gradient {
+    background: linear-gradient(to bottom right,  #1e40af,#ef4444); /* Initial gradient */
+    transition: background 0.3s ease;
+  }
+  
+  .btn-hover-gradient:hover {
+    background: linear-gradient(to bottom right,  #ef4444,#1e40af,); /* Hover gradient */
+  }

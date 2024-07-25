@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../Navbar/Navbar.css";
 
 function Navbar() {
   return (
     <div>
-      <nav className="bg-gray-800 shadow-lg fixed top-0 w-screen z-10">
-        {/* <nav className="bg-white shadow-lg fixed top-0 w-screen z-10"> */}
+      <nav className="bg-white shadow-lg fixed top-0 w-screen z-10">
+        {/* <nav className="bg-teal-800 shadow-lg fixed top-0 w-screen z-10"> */}
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-24">
             <div className="flex space-x-7">
               <div>
-                <a href="/" className="flex items-center py-4 px-2">
+                <a href="/" className="flex items-center py-4 px-0">
                   <img
-                    src="/path/to/logo.png"
+                    src="/public/mirage.png"
                     alt="Logo"
-                    className="h-8 w-8 mr-2"
+                    className="h-36 w-36 mr-2 object-cover"
                   />
                   <span className="font-semibold text-white text-lg">
                     Finavest
@@ -26,26 +27,26 @@ function Navbar() {
               <div className="group relative">
                 <a
                   href="#"
-                  className="py-4 px-2 text-white hover:text-teal-400 transition duration-300"
+                  className="py-4 px-2  gradient-nav  hover:text-red-600 font-serif"
                 >
                   Company
                 </a>
-                <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg mt-1 rounded w-48">
+                <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="/aboutUs"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4 text-red-900 hover:text-black"
                   >
                     About Us
                   </a>
                   <a
                     href="/contactUs"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Contact us
                   </a>
                   <a
                     href="/Careers"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Careers
                   </a>
@@ -55,46 +56,43 @@ function Navbar() {
               <div className="group relative">
                 <a
                   href="#"
-                  className="py-4 px-2 text-white hover:text-teal-400 transition duration-300"
+                  className="py-4 px-2 gradient-nav    hover:text-red-600 font-serif"
                 >
                   Platform
                 </a>
-                <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg mt-1 rounded w-48">
+                <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Meta Trader 5
                   </a>
-                  {/* <a href="#" className="block py-2 px-4 text-white hover:text-teal-400">Service 2</a>
-            <a href="#" className="block py-2 px-4 text-white hover:text-teal-400">Service 3</a> */}
                 </div>
               </div>
-              {/* <a href="#" className="py-4 px-2 text-white hover:text-teal-400 transition duration-300">Product</a> */}
-              {/* <a href="#" className="py-4 px-2 text-white hover:text-teal-400 transition duration-300">Contact Us</a> */}
+
               <div className="group relative">
                 <a
                   href="#"
-                  className="py-4 px-2 text-white hover:text-teal-400 transition duration-300"
+                  className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
                 >
                   Products
                 </a>
-                <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg mt-1 rounded w-48">
+                <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4 text-teal-900 hover:text-black"
                   >
                     Forex
                   </a>
                   <a
                     href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Indices
                   </a>
                   <a
                     href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Shares
                   </a>
@@ -103,20 +101,20 @@ function Navbar() {
               <div className="group relative">
                 <a
                   href="#"
-                  className="py-4 px-2 text-white hover:text-teal-400 transition duration-300"
+                  className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
                 >
                   Pages
                 </a>
-                <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg mt-1 rounded w-48">
+                <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
-                    href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    href="/Team"
+                    className="block py-2 px-4 text-teal-900 hover:text-black"
                   >
                     Meet Team
                   </a>
                   <a
-                    href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    href="/News"
+                    className="block py-2 px-4 text-teal-900 hover:text-black"
                   >
                     News
                   </a>
@@ -126,14 +124,14 @@ function Navbar() {
               <div className="group relative">
                 <a
                   href="#"
-                  className="py-4 px-2 text-white hover:text-teal-400 transition duration-300"
+                  className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
                 >
                   Education
                 </a>
-                <div className="absolute hidden group-hover:block bg-gray-700 shadow-lg mt-1 rounded w-48">
+                <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4 text-white hover:text-teal-400"
+                    className="block py-2 px-4  text-teal-900 hover:text-black"
                   >
                     Market Insights
                   </a>
@@ -142,14 +140,11 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-3">
-              <a
-                href="#"
-                className="py-2 px-5 text-md font-serif text-white bg-teal-800 rounded hover:bg-teal-900 transition duration-300"
-              >
+            <button className="hidden md:flex items-center space-x-3 btn-hover-gradient rounded-lg hover: transition duration-300">
+              <a href="#" className="py-2 px-5 text-md    text-white   ">
                 START INVESTING
               </a>
-            </div>
+            </button>
           </div>
         </div>
       </nav>

@@ -2,13 +2,14 @@ import React from "react";
 import useIntersectionObserver from "../../components/Observer/Observer";
 // import React, { useEffect, useState, useRef } from "react";
 import "../../pages/animation.css";
+import "../InvestWIthUs/Invest.css"
 import CountUp from "react-countup";
 const Counter = ({ end, label }) => {
   return (
     <div className="flex flex-col items-center justify-center p-4">
       <CountUp start={0} end={end} duration={2.75} delay={0}>
         {({ countUpRef }) => (
-          <div className="text-4xl font-bold text-teal-500">
+          <div className="text-4xl font-bold gradient-text">
             <span ref={countUpRef} />+
           </div>
         )}
@@ -86,13 +87,14 @@ function Invest() {
           className="text-center text-white-500  text-5xl font-serif topToBottom"
           ref={addElement}
         >
-          Why <span className="text-teal-700">Invest</span> With Us?
+          Why <span className="gradient-text">Invest</span> With Us?
         </h1>
         <div className="grid grid-cols-1 gap-2  md:grid-cols-3 md:gap-12 mt-9  ">
           <div
-            className="flex justify-center items-center bg-teal-700   h-28  rounded-2xl transform transition-transform duration-10 hover:scale-105 animationLeft"
+            className="flex justify-center items-center     bg-gradient-to-br from-blue-500   to-red-900  h-28  rounded-2xl transform transition-transform duration-10 hover:scale-105 animationLeft"
             ref={addElement}
           >
+            
             <img
               className="h-20 w-20 "
               src="https://multibankfx.com/_next/image?url=%2Flps%2Fstatic%2Finvest-with-us%2Fglobal-shares.png&w=96&q=75"
@@ -101,7 +103,7 @@ function Invest() {
             <p className="text-white px-5">20,000 + Global Shares</p>
           </div>
           <div
-            className="flex justify-center items-center bg-teal-700  h-28 rounded-2xl   transform transition-transform duration-10 hover:scale-105 animationLeft"
+            className="flex justify-center items-center bg-gradient-to-br from-blue-500   to-red-900  h-28 rounded-2xl   transform transition-transform duration-10 hover:scale-105 animationLeft"
             ref={addElement}
           >
             <img
@@ -112,7 +114,7 @@ function Invest() {
             <p className="text-white px-5">Leverage 1:500</p>
           </div>
           <div
-            className="flex justify-center items-center bg-teal-700  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105 animationLeft"
+            className="flex justify-center items-center bg-gradient-to-br from-blue-500   to-red-900  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105 animationLeft"
             ref={addElement}
           >
             <img
@@ -123,7 +125,7 @@ function Invest() {
             <p className="text-white px-5">Zero Commission</p>
           </div>
           <div
-            className="flex justify-center items-center bg-teal-700 h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105 animationRight"
+            className="flex justify-center items-center bg-gradient-to-br from-blue-500   to-red-900 h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105 animationRight"
             ref={addElement}
           >
             <img
@@ -134,7 +136,7 @@ function Invest() {
             <p className="text-white px-5">Fast Deposit and Withdrawals</p>
           </div>
           <div
-            className="flex justify-center items-center bg-teal-700  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105  animationRight"
+            className="flex justify-center items-center bg-gradient-to-br from-blue-500   to-red-900  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105  animationRight"
             ref={addElement}
           >
             <img
@@ -145,7 +147,7 @@ function Invest() {
             <p className="text-white px-5">24/7 Customer Support</p>
           </div>
           <div
-            className="flex justify-center items-center bg-teal-700  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105  animationRight"
+            className="flex justify-center items-center bg-gradient-to-br from-blue-500   to-red-900  h-28 rounded-2xl  transform transition-transform duration-10 hover:scale-105  animationRight"
             ref={addElement}
           >
             <img

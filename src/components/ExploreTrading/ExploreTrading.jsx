@@ -68,7 +68,7 @@ function ExploreTrading() {
       {/* explring */}
       <section className="explore mt-8 mb-24">
         <div className="contents">
-          <h1 className="text-3xl font-serif text-center">
+          <h1 className="text-3xl font-serif text-center gradient-text">
             Explore Our Trading Solutions
           </h1>
           <p className="text-center text-gray-500 mt-5 ">
@@ -80,9 +80,9 @@ function ExploreTrading() {
         </div>
         <div className="products flex justify-center mt-8 ">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 max-sm:mx-5 ">
-            <div className=" shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
+            <div className=" shadow-md  flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5 my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp  "
+                className="mx-5 my-5 item-list   bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp  "
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">

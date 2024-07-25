@@ -4,7 +4,7 @@ import WhoweAre from "../../components/Whowe/WhoweAre";
 import AboutsDetails from "../../components/Abouts/Abouts";
 import Footer from "../../components/Footer/Footer";
 import useIntersectionObserver from "../../components/Observer/Observer";
-import Invest from '../../components/InvestWIthUs/Invest'
+import Invest from "../../components/InvestWIthUs/Invest";
 
 import { Height } from "@mui/icons-material";
 
@@ -116,10 +116,11 @@ function Abouts() {
           {/* Gradient overlay  */}
         </div>
       </div>
+      <WhoweAre />
 
       {/* who we are */}
-      <div className="bg-white py-12 h-128 md:mx-20  mb-28">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      {/* <div className="bg-white py-12 h-128 md:mx-20  mb-28">
+        <div className=" mx-auto px-4 sm:px-6 max-lg:px-44">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="relative">
               <img
@@ -179,29 +180,32 @@ function Abouts() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* end */}
       {/* why choose */}
       <div className="choosemirage md:mx-28 max-sm:mx-5">
         <h1 className="title text-4xl text-black font-bold">
-          Why Choose <span className="text-teal-800">Mirage?</span>
+          Why Choose <span className="gradient-text">Mirage?</span>
         </h1>
         <p className="text-lg text-black font-semibold pt-6">
           Trade with Maleyat for unparalleled transparency and 5-star customer
           support, backed by 15 years of market expertise and a commitment to
-          protecting your funds.
+          protecting your funds. Trade with Maleyat for unparalleled
+          transparency and 5-star customer support, backed by 15 years of market
+          expertise and a commitment to protecting your funds. Trade with
+          Maleyat for unparalleled transparency and 5-star customer support,
+          backed by 15 years of market expertise and a commitment to protecting
+          your funds.
         </p>
       </div>
       {/* end */}
 
-   
-
       {/* <WhoweAre /> */}
       <AboutsDetails />
-          {/* key strength */}
-          <div className="keyfeatures md:mx-28 mx-5 mt-16 mb-16">
-        <h1 className="text-black text-4xl text-center font-bold">
+      {/* key strength */}
+      <div className="keyfeatures md:mx-28 mx-5 mt-16 mb-16">
+        <h1 className="gradient-text text-4xl text-center font-bold">
           Our Key Strengths
         </h1>
         <p className="text-gray-700 text-lg md:text-center pt-8">
@@ -286,7 +290,7 @@ function Abouts() {
 
       {/* end */}
       <Invest />
-     
+
       <Footer />
     </div>
   );

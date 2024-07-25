@@ -1,0 +1,22 @@
+.gradient-text {
+  background: linear-gradient(to right, #779af3, #f40606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For Firefox support */
+  color: transparent; /* Fallback for browsers that do not support background-clip: text */
+}
+
+.gradient-nav {
+  background: linear-gradient(to right, #779af3, #f40606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #779af3, #f40606);
+  background: bg-gradient-to-br(to right, #779af3, #f40606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* bg-gradient-to-br from-teal-400  to-teal-200 */

@@ -1,37 +1,37 @@
-import React from 'react'
+import React from "react";
 import useIntersectionObserver from "../../components/Observer/Observer";
 // import React, { useEffect, useState, useRef } from "react";
 import "../../pages/animation.css";
+import "../WeOffer/WeOffer.css"
 
 function WeOffer() {
-    const addElement = useIntersectionObserver(
-        (element) => {
-          if (element.classList.contains("animationLeft")) {
-            element.classList.add("animation"); // Add animate class when element is in view
-          } else if (element.classList.contains("animationRight")) {
-            element.classList.add("animation-slide-in-right"); // Add animate class when element is in view
-          } else if (element.classList.contains("topToBottom")) {
-            element.classList.add("animation-slideInTop"); // Add animate class when element is in view
-          } else if (element.classList.contains("bottomToTop")) {
-            element.classList.add("animation-slideInBottom"); // Add animate class when element is in view
-          } else if (element.classList.contains("scaleUp")) {
-            element.classList.add("animation-scaleUp"); // Add animate class when element is in view
-          } else if (element.classList.contains("ZoomInOut")) {
-            element.classList.add("animation-ZoomInOut"); // Add animate class when element is in view
-          }
-        },
-        { threshold: 0.1 }
-      );
+  const addElement = useIntersectionObserver(
+    (element) => {
+      if (element.classList.contains("animationLeft")) {
+        element.classList.add("animation"); // Add animate class when element is in view
+      } else if (element.classList.contains("animationRight")) {
+        element.classList.add("animation-slide-in-right"); // Add animate class when element is in view
+      } else if (element.classList.contains("topToBottom")) {
+        element.classList.add("animation-slideInTop"); // Add animate class when element is in view
+      } else if (element.classList.contains("bottomToTop")) {
+        element.classList.add("animation-slideInBottom"); // Add animate class when element is in view
+      } else if (element.classList.contains("scaleUp")) {
+        element.classList.add("animation-scaleUp"); // Add animate class when element is in view
+      } else if (element.classList.contains("ZoomInOut")) {
+        element.classList.add("animation-ZoomInOut"); // Add animate class when element is in view
+      }
+    },
+    { threshold: 0.1 }
+  );
   return (
     <div>
-         {/* offer products */}
-     
-     
-         <section className="bg-gray-200 md:mt-8 ">
-        <h5 className="text-center font-semibold text-teal-800 pt-20">
+      {/* offer products */}
+
+      <section className="bg-gray-200 md:mt-8 ">
+        <h5 className="text-center font-semibold gradient-text pt-20">
           WHAT WE OFFER
         </h5>
-        <h1 className="text-center text-2xl md:text-4xl font-semibold max-sm:mx-5 mt-3 ">
+        <h1 className="gradient-text text-center text-2xl md:text-4xl font-semibold max-sm:mx-5 mt-3 ">
           Unlock Financial Success with Strategic Trading
         </h1>
         {/* <h1 className="text-center   text-2xl md:text-4xl font-semibold">Trading</h1> */}
@@ -54,7 +54,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif ">
                   Learn More
                 </button>
               </div>
@@ -76,7 +76,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
                   Learn More
                 </button>
               </div>
@@ -98,7 +98,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
                   Learn More
                 </button>
               </div>
@@ -120,7 +120,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
                   Learn More
                 </button>
               </div>
@@ -142,7 +142,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
                   Learn More
                 </button>
               </div>
@@ -164,7 +164,7 @@ function WeOffer() {
                 sollicitudin
               </p>
               <div className="flex items-center">
-                <button className="bg-teal-800 mt-3  mx-9 w-28 h-8 text-white font-serif  ">
+                <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
                   Learn More
                 </button>
               </div>
@@ -172,8 +172,6 @@ function WeOffer() {
           </div>
         </div>
       </section>
-
-
 
       {/* end */}
       {/* trading */}
@@ -184,33 +182,29 @@ function WeOffer() {
             "url('https://img.freepik.com/premium-photo/businessman-hold-sales-data-economic-growth-graph-chart-business-planning-strategy-analysing-trading-exchange-financial-banking-technology-digital-marketing-profit-growing-plan_150455-10207.jpg?w=1380')",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+        <div className="absolute inset-0  bg-gradient-to-br from-blue-500   to-red-900 opacity-50"></div>{" "}
         {/* Overlay */}
-        <div className="relative flex flex-col items-center justify-center h-full text-center text-white">
-          <h1
-            className="text-4xl md:text-6xl font-bold mb-4 scaleUp"
-            ref={addElement}
-          >
-            Start Trading Today and Unlock Your Financial Potential
-          </h1>
-          <p
-            className="text-lg md:text-xl mb-8 animationRight"
-            ref={addElement}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </p>
-          <button
-            className="px-8 py-4 bg-teal-900 text-white font-bold rounded-full hover:bg-teal-600 topToBottom"
-            ref={addElement}
-          >
-            Start Trading Now!
-          </button>
+        <div className="relative flex flex-col items-center justify-center h-full text-center text-white  ">
+          <div className="">
+            <h1
+              className="text-4xl md:text-4xl font-bold mb-4 scaleUp "
+              ref={addElement}
+            >
+              Start Trading Today and Unlock Your Financial Potential
+            </h1>
+            <p
+              className="text-lg md:text-sm mb-8 animationRight "
+              ref={addElement}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+          </div>
         </div>
       </div>
       {/* end */}
     </div>
-  )
+  );
 }
 
-export default WeOffer
+export default WeOffer;
