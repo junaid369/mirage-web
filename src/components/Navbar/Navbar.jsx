@@ -40,13 +40,13 @@ function Navbar() {
                   </a>
                   <a
                     href="/contactUs"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Contact us
                   </a>
                   <a
                     href="/Careers"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Careers
                   </a>
@@ -63,7 +63,7 @@ function Navbar() {
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Meta Trader 5
                   </a>
@@ -80,19 +80,19 @@ function Navbar() {
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4 text-teal-900 hover:text-black"
+                    className="block py-2 px-4 text-red-900 hover:text-black"
                   >
                     Forex
                   </a>
                   <a
                     href="#"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Indices
                   </a>
                   <a
                     href="#"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Shares
                   </a>
@@ -108,13 +108,13 @@ function Navbar() {
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="/Team"
-                    className="block py-2 px-4 text-teal-900 hover:text-black"
+                    className="block py-2 px-4 text-red-900 hover:text-black"
                   >
                     Meet Team
                   </a>
                   <a
                     href="/News"
-                    className="block py-2 px-4 text-teal-900 hover:text-black"
+                    className="block py-2 px-4 text-red-900 hover:text-black"
                   >
                     News
                   </a>
@@ -131,7 +131,7 @@ function Navbar() {
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
                     href="#"
-                    className="block py-2 px-4  text-teal-900 hover:text-black"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Market Insights
                   </a>
