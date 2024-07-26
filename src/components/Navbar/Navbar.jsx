@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Navbar/Navbar.css";
 
 function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div>
       <nav className="bg-white shadow-lg fixed top-0 w-screen z-10">
@@ -14,17 +15,17 @@ function Navbar() {
                 <a href="/" className="flex items-center py-4 px-0">
                   <img
                     src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
-                      // src="/mirage.png"
+                    // src="/mirage.png"
                     alt="Logo"
                     className="h-36 w-36 mr-2 object-cover"
                   />
                   <span className="font-semibold text-white text-lg">
-                    Finavest
+                    mirage
                   </span>
                 </a>
               </div>
             </div>
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="hidden md:flex lg:flex items-center space-x-1">
               <div className="group relative">
                 <a
                   href="#"
@@ -53,7 +54,6 @@ function Navbar() {
                   </a>
                 </div>
               </div>
-              {/* <a href="#" className="py-4 px-2 text-white hover:text-teal-400 transition duration-300">About Us</a> */}
               <div className="group relative">
                 <a
                   href="#"
@@ -146,6 +146,83 @@ function Navbar() {
                 START INVESTING
               </a>
             </button>
+
+               {/* Mobile Menu Button */}
+          <button
+            className="md:hidden flex items-center space-x-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6 text-gray-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+
+            {/* Mobile Menu */}
+      <div
+        className={`md:hidden fixed inset-0 bg-white shadow-lg transition-transform transform ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex flex-col space-y-4 p-4">
+          {['Company', 'Platform', 'Products', 'Pages', 'Education'].map((item) => (
+            <div key={item}>
+              <a
+                href="#"
+                className="py-4 px-2 gradient-nav hover:text-red-600 font-serif block"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item}
+              </a>
+              <div className="ml-4">
+                {item === 'Company' && (
+                  <>
+                    <a href="/aboutUs" className="block py-2 px-4 text-red-900 hover:text-black">About Us</a>
+                    <a href="/contactUs" className="block py-2 px-4 text-red-900 hover:text-black">Contact us</a>
+                    <a href="/Careers" className="block py-2 px-4 text-red-900 hover:text-black">Careers</a>
+                  </>
+                )}
+                {item === 'Platform' && (
+                  <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Meta Trader 5</a>
+                )}
+                {item === 'Products' && (
+                  <>
+                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Forex</a>
+                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Indices</a>
+                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Shares</a>
+                  </>
+                )}
+                {item === 'Pages' && (
+                  <>
+                    <a href="/Team" className="block py-2 px-4 text-red-900 hover:text-black">Meet Team</a>
+                    <a href="/News" className="block py-2 px-4 text-red-900 hover:text-black">News</a>
+                  </>
+                )}
+                {item === 'Education' && (
+                  <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Market Insights</a>
+                )}
+              </div>
+            </div>
+          ))}
+          <a
+            href="#"
+            className="py-2 px-5 text-md text-white btn-hover-gradient rounded-lg block text-center"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            START INVESTING
+          </a>
+          </div>
+          </div>
           </div>
         </div>
       </nav>
