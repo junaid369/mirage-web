@@ -24,14 +24,14 @@ function WhoweAre() {
   );
   return (
     <div>
-      <div className="bg-white py-12 md:mx-20  mb-28 ">
-        <div className="md:px-4 max-sm:px-4  ">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="bg-white py-12 md:mx-20  lg:mx-20 mb-28 ">
+        <div className="md:px-4 lg:px-4 max-sm:px-4  ">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
             <div className="relative ">
               <img
                 src="https://thepixelcurve.com/html/techwix/techwix/assets/images/shape/about-shape2.png"
                 alt="Background"
-                className="max-sm:hidden absolute inset-0 md:pl-32 object-cover rounded-xl md:transform -translate-y-10"
+                className="max-sm:hidden absolute inset-0 md:pl-32 lg:pl-32 object-cover rounded-xl md:transform -translate-y-10"
               />
 
               <div className="relative animationLeft" ref={addElement}>
@@ -42,7 +42,7 @@ function WhoweAre() {
                 />
               </div>
               <div
-                className=" animationRight absolute max-sm:bottom-8  md:bottom-8 right-0 md:right-6  transform translate-y-1/4"
+                className=" animationRight absolute max-sm:bottom-8  md:bottom-8 lg:bottom-8 right-0 md:right-6  lg:right-6 transform translate-y-1/4"
                 ref={addElement}
               >
                 <img
