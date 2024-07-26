@@ -27,14 +27,17 @@ function WhoweAre() {
       <div className="bg-white py-12 md:mx-20  lg:mx-20 mb-28 ">
         <div className="max-sm:px-4 md:px-0 lg:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
-            <div className="relative ">
+            {/* <div className="relative ">
               <img
                 src="https://thepixelcurve.com/html/techwix/techwix/assets/images/shape/about-shape2.png"
                 alt="Background"
                 className="max-sm:hidden absolute inset-0 md:pl-32 lg:pl-32 object-cover rounded-xl md:transform -translate-y-10"
               />
 
-              <div className="relative animationLeft md:ml-5 lg:ml-5" ref={addElement}>
+              <div
+                className="relative animationLeft md:ml-5 lg:ml-5"
+                ref={addElement}
+              >
                 <img
                   className="max-sm:w-48 rounded-lg"
                   src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-3.jpg"
@@ -43,6 +46,34 @@ function WhoweAre() {
               </div>
               <div
                 className=" animationRight absolute max-sm:bottom-8  md:bottom-8 lg:bottom-8 right-0 md:right-6  lg:right-6 transform translate-y-1/4"
+                ref={addElement}
+              >
+                <img
+                  className="max-sm:w-48 rounded-lg"
+                  src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-4.jpg"
+                  alt=""
+                />
+              </div>
+            </div> */}
+            <div className="flex justify-center gap-4 ">
+              {/* <img
+                src="https://thepixelcurve.com/html/techwix/techwix/assets/images/shape/about-shape2.png"
+                alt="Background"
+                className="max-sm:hidden absolute inset-0 md:pl-32 lg:pl-32 object-cover rounded-xl md:transform -translate-y-10"
+              /> */}
+
+              <div
+                className="animationLeft md:ml-5 lg:ml-5"
+                ref={addElement}
+              >
+                <img
+                  className="max-sm:w-48 rounded-lg"
+                  src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-3.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                className=" animationRight  max-sm:bottom-8  md:bottom-8 lg:bottom-8 right-0 md:right-6  lg:right-6 transform translate-y-1/4"
                 ref={addElement}
               >
                 <img
@@ -97,7 +128,7 @@ function WhoweAre() {
             <br /> Across 175+ Countries
           </h2>
         </div>
-        <div >
+        <div>
           <div className="flex justify-center mt-16">
             <div
               className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-4  animationLeft"

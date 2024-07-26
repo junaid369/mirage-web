@@ -48,7 +48,7 @@ function Footer() {
                     // className="  w-44"
                     className="h-20 w-36  object-cover"
                     // src=" https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Logo-Utama-DUA-white.png"
-                    src="/public/mirage.png"
+                    src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
                     alt=""
                   />
                 </div>

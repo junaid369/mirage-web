@@ -26,17 +26,17 @@ function Abouts() {
   return (
     <div>
       {/* details abouts */}
-      <section className="details mt-8 md:flex md:mx-24 mb-20">
-        <div className="flex w-6/6 md:w-3/6 md:justify-center md:items-center">
+      <section className="details mt-8 lg:flex md:mx-24 mb-20">
+        <div className="flex max-sm:w-6/6 lg:w-3/6 md:justify-center md:items-center ">
           <img
             src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/two-stock-exchange-traders-getting-profit-in-trading-currency-stock--1536x1022.jpg"
             alt=""
             srcset=""
-            className="h-full object-center"
+            className="h-full object-cover"
           />
         </div>
         <div
-          className="flex flex-col w-6/6 md:w-3/6 animationRight"
+          className="flex flex-col w-6/6 lg:w-3/6 animationRight"
           ref={addElement}
         >
           <h6 className=" pl-10 md:pl-24 mt-10 gradient-text text-md font-semibold">
@@ -102,7 +102,7 @@ function Abouts() {
             Start Trading Now!
           </button>
         </div>
-        <div className="md:w-2/6 flex flex-col animationRight" ref={addElement}>
+        <div className="md:w-2/6  flex flex-col animationRight" ref={addElement}>
           <img
             src="https://www.maleyat.ae/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4gm0l8ni%2Fmaleyat-ae%2Fd21aa3b0393a607307c894d30bc04be02bec8e81-640x493.webp%3Ffit%3Dmax%26auto%3Dformat&w=640&q=75"
             alt=""

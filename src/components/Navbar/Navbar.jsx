@@ -13,8 +13,8 @@ function Navbar() {
               <div>
                 <a href="/" className="flex items-center py-4 px-0">
                   <img
-                    // src="public/mirage.png"
-                      src="/mirage.png"
+                    src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
+                      // src="/mirage.png"
                     alt="Logo"
                     className="h-36 w-36 mr-2 object-cover"
                   />
