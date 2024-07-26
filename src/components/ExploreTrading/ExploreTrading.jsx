@@ -79,7 +79,7 @@ function ExploreTrading() {
           </p>
         </div>
         <div className="products flex justify-center mt-8 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 max-sm:mx-5 ">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 md:gap-5 lg:gap-8 max-sm:mx-5 ">
             <div className=" shadow-md  flex justify-center items-center max-sm:mb-12">
               <div
                 className="mx-5 my-5 item-list   bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp  "

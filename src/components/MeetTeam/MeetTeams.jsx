@@ -109,7 +109,7 @@ function MeetTeams() {
       </section>
 
       {/* why choose us */}
-      <section className="whychoose mx-32 max-sm:mx-5 mb-20">
+      <section className="whychoose mx-32  md:mx-10 lg:mx-32 max-sm:mx-5 mb-20">
         <h5 className="text-center gradient-text font-medium">WHY CHOOSE US</h5>
         <h1 className="mt-4  title gradient-text text-center text-4xl max-sm:text-2xl font-medium">
           {" "}
@@ -119,12 +119,12 @@ function MeetTeams() {
           {" "}
           Anywhere
         </h1>
-        <p className="text-center pt-10 text-md md:mx-80 text-gray-400">
+        <p className="text-center pt-10 text-md md:mx-10 lg:mx-80  text-gray-400">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
 
-        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mx-0">
+        <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 lg:mx-0">
           <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600 max-sm:mb-8 h-60">
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-account-cog text-white text-4xl"></i>
@@ -138,7 +138,7 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
+          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cellphone-cog text-white text-4xl"></i>
             </div>
@@ -151,7 +151,7 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
+          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-headphones text-white text-4xl"></i>
             </div>
@@ -164,7 +164,7 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
+          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cog-sync text-white text-4xl"></i>
             </div>
@@ -182,7 +182,7 @@ function MeetTeams() {
 
       {/* end */}
 
-      <section className="teamImages mx-32  max-sm:mx-5 mb-28">
+      <section className="teamImages mx-32  md:mx-10 lg:mx-32   max-sm:mx-5 mb-28">
         <div className="contents">
           <h6 className="description text-center text-sm gradient-text font-medium">
             PROFESSIONAL GUIDANCE
@@ -191,11 +191,11 @@ function MeetTeams() {
             Meet the Experts Behind Your Success
           </h1>
         </div>
-        <div className="grid grid-cols-4 max-sm:grid-cols-1 md:gap-10 mt-14 max-sm:flex flex-col max-sm:justify-center max-sm:items-center">
+        <div className="grid lg:grid-cols-4  md:grid-cols-2 max-sm:grid-cols-1 md:gap-4 lg:gap-10 mt-14 max-sm:flex flex-col max-sm:justify-center max-sm:items-center">
           {teamMembers.map((item, index) => {
             return (
               <div className="singleMember  shadow-md  w-72  max-sm:w-96 hover:border border-1 hover: border-teal-600  rounded-xl">
-                <div className="flex  gap-3 max-sm:gap-10">
+                <div className="flex  gap-3 max-sm:gap-10 ">
                   <div className="flex flex-col ml-4 mt-16">
                     <ul class="ekit_social_media ">
                       <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2">

@@ -135,7 +135,7 @@ function News() {
           </h1>
         ) : null}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-28 max-sm:mx-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-4 md:gap-4  lg:gap-8  max-sm:gap-8 lg:mx-28 max-sm:mx-5 mb-10">
           {news.map((article, index) => (
             <div
               key={index}

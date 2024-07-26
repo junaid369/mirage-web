@@ -26,21 +26,21 @@ function AppsBanner() {
     <div>
       {/* apps section */}
       <section className="apps mt-10 max-sm:hidden bg-neutral-800 mx-5 rounded-xl">
-        <div className="mx-10 flex justify-center  bg-transparent	 h-96 ">
+        <div className="lg:mx-10  flex lg:justify-center  md:gap-3 lg:gap-0  bg-transparent md:h-72	 lg:h-96 ">
           <div
-            className="w-3/6 justify-center items-center bottomToTop"
+            className="md:w-2/6 lg:w-3/6  lg:justify-center lg:items-center bottomToTop md:mt-0 lg:mt-0"
             ref={addElement}
           >
             <img
-              className="h-96   mx-20"
+              className="lg:h-96 md:h-72  lg:mx-20 "
               src="	https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/mock-up-copy-space-pretty-brazilian-or-hispanic-2024-04-23-02-10-38-3-e1717138224410.png"
               alt=""
               srcset=""
             />
           </div>
-          <div className="w-3/6 animationRight" ref={addElement}>
-            <div className="title flex mt-24">
-              <h1 className="text-white text-5xl font-serif">
+          <div className="md:w-4/6 lg:w-3/6  animationRight" ref={addElement}>
+            <div className="title flex lg:mt-24 md:mt-10">
+              <h1 className="text-white   md:text-3xl  lg:text-5xl font-serif">
                 Trade Seamlessly on Any Device, Anytime
               </h1>
             </div>
@@ -48,19 +48,19 @@ function AppsBanner() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
             </p>
-            <div className="flex gap-4 mt-3">
+            <div className="flex gap-4 md:mt-10 md:ml-10 lg:ml-0 lg:mt-3">
               <img
-                className=" w-48 object-fill"
+                className="md:w-32   lg:w-48 lg:object-fill md:object-contain"
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Asset-4@300x-8-1536x465.png"
                 alt=""
               />
               <img
-                className=" w-48 object-fill"
+                className=" md:w-32  lg:w-48 lg:object-fill md:object-contain"
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Asset-3@300x-8-1536x465.png"
                 alt=""
               />
               <img
-                className=" w-48  object-fill"
+                className=" md:w-32  lg:w-48 lg:object-fill md:object-contain"
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Microsoft-White-2048x620.png"
                 alt=""
               />
@@ -114,8 +114,8 @@ function AppsBanner() {
       {/* clint review */}
 
       <section className="clint mt-24 mb-24 max-sm:mt-96">
-        <div className="md:mx-24 max-sm:mx-5 md:flex gap-36">
-          <div className="w-6/6 md:w-2/6 ">
+        <div className="md:mx-10 lg:mx-24 max-sm:mx-5  lg:flex gap-36">
+          <div className="w-6/6 lg:w-2/6 ">
             <div className="flex flex-col">
               <h1 className="text-4xl font-serif gradient-text">Our Clients Reviews</h1>
               <div className="mt-3">
@@ -132,7 +132,7 @@ function AppsBanner() {
               </div>
             </div>
           </div>
-          <div className="md:w-4/6 ">
+          <div className="md:mt-14 lg:mt-0 lg:w-4/6">
             <div className="md:flex gap-3 max-sm:mt-10 justify-center items-center">
               <div className=" content-1 bg-gray-200 h-64 w-96 rounded-md max-sm:mb-10 max-sm:ml-2 ">
                 <div className="p-5 mt-5 ">

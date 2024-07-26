@@ -24,7 +24,7 @@ function WhoweAre() {
   );
   return (
     <div>
-      <div className="bg-white py-12 md:mx-20  lg:mx-20 mb-28 ">
+      <div className="bg-white py-12 md:mx-10  lg:mx-20 mb-28 ">
         <div className="max-sm:px-4 md:px-0 lg:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
             {/* <div className="relative ">
@@ -84,7 +84,7 @@ function WhoweAre() {
               </div>
             </div>
             <div
-              className="flex flex-col justify-center max-sm:mt-14 md:ml-16 animationRight"
+              className="flex flex-col justify-center max-sm:mt-14 md:mt-20 lg:ml-16 animationRight"
               ref={addElement}
             >
               <h3 className="text-sm font-semibold gradient-text uppercase">
@@ -131,7 +131,7 @@ function WhoweAre() {
         <div>
           <div className="flex justify-center mt-16">
             <div
-              className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-4  animationLeft"
+              className="w-full lg:w-3/4  grid grid-cols-2 md:grid-cols-4  animationLeft"
               ref={addElement}
             >
               <div className="flex justify-center items-center">
@@ -166,7 +166,7 @@ function WhoweAre() {
           </div>
           <div className="max-sm:hidden flex justify-center mt-3">
             <div
-              className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-4  animationRight "
+              className="w-full lg:w-3/4 grid grid-cols-2 md:grid-cols-4  animationRight "
               ref={addElement}
             >
               <div className="flex justify-center items-center">

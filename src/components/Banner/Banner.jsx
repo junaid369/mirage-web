@@ -34,7 +34,7 @@ function Banner() {
           }}
         >
           {/* md:pt-72 max-lg:pt-96 */}
-          <div className="md:w-3/6   animationLeft" ref={addElement}>
+          <div className="md:w-6/6 md:mx-1 lg:mx-0  lg:w-3/6 animationLeft" ref={addElement}>
             <h1 className="text-center gradient-text   text-3xl  md:text-6xl font-serif">
               The Largest & Most Regualted Financial Derivatives Broker
               Worldwide
@@ -42,7 +42,7 @@ function Banner() {
           </div>
         </div>
       </section>
-      <section className="banner md:hidden ">
+      <section className="banner md:hidden  ">
       
         <div className="flex  relative justify-center">
           <img
@@ -50,7 +50,7 @@ function Banner() {
             alt=""
           />
           <div className="absolute mt-28 justify-center">
-            <h1 className="text-center text-teal-700  text-3xl  font-semibold">
+            <h1 className="text-center gradient-text  text-3xl  font-semibold">
               The Largest & Most Regualted Financial Derivatives Broker
               Worldwide
             </h1>

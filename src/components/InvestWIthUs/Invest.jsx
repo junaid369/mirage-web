@@ -82,14 +82,14 @@ function Invest() {
     <div>
       {/* why invets */}
 
-      <section className="invest mt-8  mx-3 md:mx-36  mb-20">
+      <section className="invest mt-8  mx-3 md:mx-3  lg:mx-36 mb-20">
         <h1
           className="text-center text-white-500  text-5xl font-serif topToBottom"
           ref={addElement}
         >
           Why <span className="gradient-text">Invest</span> With Us?
         </h1>
-        <div className="grid grid-cols-1 gap-2  md:grid-cols-3 md:gap-12 mt-9  ">
+        <div className="grid grid-cols-1 gap-2  md:grid-cols-2 md:gap-3 lg:gap-12 mt-9  ">
           <div
             className="flex justify-center items-center     bg-gradient-to-br from-blue-500   to-red-900  h-28  rounded-2xl transform transition-transform duration-10 hover:scale-105 animationLeft"
             ref={addElement}
@@ -163,7 +163,7 @@ function Invest() {
 
       {/* counter */}
       <div className="bg-white mt-3  py-8 shadow-md max-sm:border-2">
-        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-2  lg:grid-cols-4 gap-4">
           <Counter end={27} label="Years of Experience" />
           <Counter end={29000} label="Project Done" />
           <Counter end={279} label="Expert Team" />

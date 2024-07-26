@@ -26,7 +26,7 @@ function Abouts() {
   return (
     <div>
       {/* details abouts */}
-      <section className="details mt-8 lg:flex md:mx-24 mb-20">
+      <section className="details mt-8 lg:flex md:mx-10 lg:mx-24 mb-20">
         <div className="flex max-sm:w-6/6 lg:w-3/6 md:justify-center md:items-center ">
           <img
             src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/two-stock-exchange-traders-getting-profit-in-trading-currency-stock--1536x1022.jpg"
@@ -39,41 +39,41 @@ function Abouts() {
           className="flex flex-col w-6/6 lg:w-3/6 animationRight"
           ref={addElement}
         >
-          <h6 className=" pl-10 md:pl-24 mt-10 gradient-text text-md font-semibold">
+          <h6 className="max-sm:pl-10  md:pl-10  lg:pl-24  mt-10 gradient-text text-md font-semibold">
             Our Value
           </h6>
-          <h4 className="gradient-text pl-10 md:pl-24 mt-3  text-xl md:text-4xl font-semibold">
+          <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold">
             Your Success is Our Priority
           </h4>
-          <p className="pl-10 md:pl-24 mt-5 text-gray-500">
+          <p className="pl-10   lg:pl-24 mt-5 text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus,<br></br> luctus nec ullamcorper mattis, pulvinar dapibus
             leo.
           </p>
-          <div className="flex ml-10 md:ml-24 mt-8">
-            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
+          <div className="flex ml-10 lg:ml-24 mt-8">
+            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
               <i
                 aria-hidden="true"
-                className="mdi mdi-rocket-launch text-white text-4xl"
+                className="mdi mdi-rocket-launch text-white text-2xl lg:text-4xl"
               ></i>
             </div>
-            <div className="mx-3 w-2/3">
-              <h2 className="text-2xl gradient-text">Our Vision</h2>
-              <p>
+            <div className=" mx-5 lg:mx-3 w-2/3 ">
+              <h2 className=" text-xl lg:text-2xl gradient-text">Our Vision</h2>
+              <p className="">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </p>
             </div>
           </div>
-          <div className="flex ml-10 md:ml-24 mt-8">
-            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-16  max-sm:h-16  md:w-16 md:h-16  flex items-center justify-center">
+          <div className="flex ml-10 lg:ml-24 mt-8">
+            <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
               <i
                 aria-hidden="true"
-                className="mdi mdi-bullseye-arrow text-white text-4xl"
+                className="mdi mdi-bullseye-arrow text-white text-2xl lg:text-4x"
               ></i>
             </div>
-            <div className="mx-3 w-2/3">
-              <h2 className="text-2xl gradient-text">Our Vision</h2>
+            <div className="mx-5 lg:mx-3 w-2/3">
+              <h2 className="text-xl  lg:text-2xl gradient-text">Our Mission</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -86,9 +86,9 @@ function Abouts() {
       {/* end */}
 
       {/* first arab banner */}
-      <section className="bg-gradient-to-br from-blue-500   to-red-900 md:flex mx-2 md:mx-10 rounded-lg mt-5 mb-20">
+      <section className="bg-gradient-to-br from-blue-500   to-red-900 lg:flex mx-2 md:mx-10 rounded-lg mt-5 mb-20">
         <div
-          className="w-4/6  flex flex-col justify-center items-center max-sm:hidden animationLeft"
+          className="w-4/6  lg:flex flex-col justify-center items-center max-sm:hidden md:hidden  animationLeft"
           ref={addElement}
         >
           <h1 className=" text-white  text-4xl md:text-5xl mx-10 pt-10 font-serif mb-4">
@@ -102,14 +102,14 @@ function Abouts() {
             Start Trading Now!
           </button>
         </div>
-        <div className="md:w-2/6  flex flex-col animationRight" ref={addElement}>
+        <div className="lg:w-2/6  flex flex-col animationRight" ref={addElement}>
           <img
             src="https://www.maleyat.ae/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4gm0l8ni%2Fmaleyat-ae%2Fd21aa3b0393a607307c894d30bc04be02bec8e81-640x493.webp%3Ffit%3Dmax%26auto%3Dformat&w=640&q=75"
             alt=""
             srcset=""
           />
         </div>
-        <div className="w-6/6  flex flex-col justify-center items-center md:hidden">
+        <div className="w-6/6  flex flex-col justify-center items-center lg:hidden">
           <h1 className=" text-white  text-3xl text-center  pt-10 font-bold mb-4">
             Start Trading Today and Unlock Your Financial Potential
           </h1>

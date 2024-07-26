@@ -31,14 +31,14 @@ function WeOffer() {
         <h5 className="text-center font-semibold gradient-text pt-20">
           WHAT WE OFFER
         </h5>
-        <h1 className="gradient-text text-center text-2xl md:text-4xl font-semibold max-sm:mx-5 mt-3 ">
+        <h1 className="gradient-text text-center text-2xl md:text-2xl lg:text-4xl  font-semibold max-sm:mx-5 mt-3 ">
           Unlock Financial Success with Strategic Trading
         </h1>
         {/* <h1 className="text-center   text-2xl md:text-4xl font-semibold">Trading</h1> */}
-        <div className="items flex justify-center mt-10  md:mx-10 ">
-          <div className="grid grid-cols-1 md:grid-cols-3  md:gap-8  ">
+        <div className="items flex justify-center mt-10 mx-5 md:mx-10 lg:mx-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4  lg:gap-8 ">
             <div
-              className="flex flex-col bg-white w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
               ref={addElement}
             >
               <img
@@ -60,7 +60,7 @@ function WeOffer() {
               </div>
             </div>
             <div
-              className="flex flex-col bg-white w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
               ref={addElement}
             >
               <img
@@ -82,7 +82,7 @@ function WeOffer() {
               </div>
             </div>
             <div
-              className="flex flex-col bg-white w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
               ref={addElement}
             >
               <img
@@ -104,7 +104,7 @@ function WeOffer() {
               </div>
             </div>
             <div
-              className="flex flex-col bg-white w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
               ref={addElement}
             >
               <img
@@ -126,7 +126,7 @@ function WeOffer() {
               </div>
             </div>
             <div
-              className="flex flex-col bg-white w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 shadow-xl mb-4 transform transition-transform duration-10 hover:scale-105 ZoomInOut"
               ref={addElement}
             >
               <img
@@ -148,7 +148,7 @@ function WeOffer() {
               </div>
             </div>
             <div
-              className="flex flex-col bg-white w-96 h-80 mb-12 shadow-xltransform transition-transform duration-10 hover:scale-105  ZoomInOut"
+              className="flex flex-col bg-white lg:w-96 h-80 mb-12 shadow-xltransform transition-transform duration-10 hover:scale-105  ZoomInOut"
               ref={addElement}
             >
               <img

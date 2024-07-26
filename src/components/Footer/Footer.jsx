@@ -5,7 +5,7 @@ function Footer() {
     <div>
       {/* footer */}
       <footer className="bg-black text-white py-8 max-sm:hidden">
-        <div className="flex mx-28 items-center gap-10">
+        <div className="flex md:mx-10  lg:mx-28 items-center gap-10">
           <div className="flex items-center mb-4">
             <div className="rounded-full bg-gray-400 h-10 w-10 flex justify-center items-center">
               <i aria-hidden="true" class="mdi mdi-map-marker text-xl"></i>
@@ -26,7 +26,7 @@ function Footer() {
               <p>support@yourdomain.tld</p>
             </div>
           </div>
-          <div className="flex items-center mb-4">
+          <div className="lg:flex items-center mb-4 md:hidden ">
             <div className="rounded-full bg-gray-400 h-10 w-10 flex justify-center items-center">
               <i aria-hidden="true" class="mdi mdi-phone-in-talk text-xl"></i>
             </div>
@@ -37,13 +37,13 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="mx-28 mt-3 border-1 border-gray-600" />
+        <hr className="md:mx-10 lg:mx-28 mt-3 border-1 border-gray-600" />
 
-        <div className="last row mx-28 mt-5">
-          <div className="flex gap-5">
-            <div className="w-2/6">
+        <div className="last row md:mx-3 lg:mx-28 mt-5">
+          <div className="flex md:gap-2 lg:gap-5">
+            <div className="w-2/6 ">
               <div className="title flex-col items-center justify-center">
-                <div className="bg-white h-20 w-36    ">
+                {/* <div className="bg-white h-20 w-36    ">
                   <img
                     // className="  w-44"
                     className="h-20 w-36  object-cover"
@@ -51,7 +51,14 @@ function Footer() {
                     src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
                     alt=""
                   />
-                </div>
+                </div> */}
+                <img
+                    // className="  w-44"
+                    className="h-20 w-36  object-cover bg-white"
+                    // src=" https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Logo-Utama-DUA-white.png"
+                    src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
+                    alt=""
+                  />
                 <p className="text-white py-5">
                   Integer tempor porta iaculis morbi commodo molestie fames ex
                   dignissim
@@ -61,9 +68,9 @@ function Footer() {
                     <input
                       placeholder="Serach .."
                       type="text"
-                      className="h-12 w-72 px-3"
+                      className="h-12 md:w-36 lg:w-72 px-3"
                     />
-                    <div className="serach icon btn-gradient h-12  w-14 flex items-center justify-center">
+                    <div className="serach icon bg-gray-600 h-12  w-14 flex items-center justify-center">
                       <span class="mdi mdi-magnify text-4xl"></span>
                     </div>
                   </div>

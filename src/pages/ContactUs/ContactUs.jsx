@@ -61,11 +61,11 @@ function ContactUs() {
 
         {/* Content */}
         <div className="relative  py-28 max-sm:py-14 ">
-          <div className="md:flex max-lg:justify-center max-lg:items-center md:mx-36 lg:mx-36 md:mb-30 max-sm:mx-5">
-            <div className="md:w-3/6 max-sm:mb-8">
+          <div className="lg:flex max-lg:justify-center max-lg:items-center md:mx-10 lg:mx-36  md:mb-30 max-sm:mx-5">
+            <div className="lg:w-3/6 max-sm:mb-8 md:mb-10 lg:mb-0">
               <h2 className="gradient-text font-semibold">GET IN TOUCH</h2>
-              <div className="md:max-w:sm">
-                <h1 className="max-sm:text-2xl  text-3xl font-serif   gradient-text  pt-6 md:max-w-md">
+              <div className="lg:max-w:sm">
+                <h1 className="max-sm:text-2xl  text-3xl font-serif   gradient-text  pt-6 md:max-w-lg">
                   Connecting for a Stronger Financial Future
                 </h1>
               </div>
@@ -74,7 +74,7 @@ function ContactUs() {
                 velit efficitur mattis
               </p>
             </div>
-            <div className="md:w-3/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
+            <div className="lg:w-3/6 md:grid  lg:grid grid-cols-3 items-center justify-center lg:ml-20 ">
               <div className="text-center max-sm:mb-7 ">
                 <div className="gradient-text  flex flex-col items-center justify-center  mb-2">
                   <i
@@ -117,9 +117,9 @@ function ContactUs() {
 
           {/* form start */}
 
-          <div className="md:mx-36 lg:mx-36 max-sm:mx-5 md:flex gap-3">
-            <div className="mt-16  md:w-4/6 ">
-              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 lg:p-5 h-full">
+          <div className="md:mx-10 lg:mx-36 max-sm:mx-5  lg:flex gap-3 ">
+            <div className="mt-16  md:w-6/6 lg:w-4/6">
+              <div className="bg-white shadow-md rounded-lg md:p-8 lg:p-8      max-sm:p-8  h-full ">
                 <h2 className="text-3xl font-serif gradient-text">
                   Send us a message
                 </h2>
@@ -143,34 +143,34 @@ function ContactUs() {
                     <input
                       type="text"
                       placeholder="Your Phone"
-                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 max-lg:mb-14 max-sm:mb-2"
+                      className="p-3 border rounded-md bg-gray-200 md:mb-2  max-lg:h-16 max-lg:mb-14 max-sm:mb-2"
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16  max-lg:mb-14 max-sm:mb-2"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 md:mb-2  max-lg:mb-14 max-sm:mb-2"
                     />
                   </div>
                   <textarea
                     placeholder="Your Subject"
-                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 max-lg:mb-14 max-sm:mb-2 max-lg:h-16"
+                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 md:mb-2  max-lg:mb-14 max-sm:mb-2 max-lg:h-16"
                     rows="1"
                   ></textarea>
                   <textarea
                     placeholder="Your Message"
-                    className="p-3 border rounded-md w-full mt-4 bg-gray-200 max-lg:mb-14 max-lg:h-16"
+                    className="p-3 border rounded-md w-full mt-4 bg-gray-200  md:mb-2 lg:mb-0 max-lg:h-16"
                     rows="5"
                   ></textarea>
                   <button
                     type="submit"
-                    className=" bg-gradient-to-br from-blue-500   to-red-900  text-white px-6 py-3 rounded-md mt-4 w-full"
+                    className=" bg-gradient-to-br from-blue-500   to-red-900  text-white px-6 py-4 rounded-md mt-2 w-full"
                   >
                     Send Message
                   </button>
                 </form>
               </div>
             </div>
-            <div className="md:w-2/6 mt-16 h-full">
+            <div className="md:w-6/6 lg:w-2/6 mt-16 h-full">
               <div className="relative overflow-hidden">
                 <img
                   className="object-contain transform transition-transform duration-300 ease-in-out hover:translate-x-6 hover:scale-105"
@@ -189,7 +189,7 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="md:flex md:mx-28 max-sm:mx-5 justify-center items-center py-12 md:gap-5">
+          <div className="md:flex md:mx-10 lg:mx-28 max-sm:mx-5 justify-center items-center py-12 md:gap-5">
             <div className="title">
               <h1 className="text-black text-4xl  max-sm:text-2xl font-serif max-sm:text-center">
                 Follow our social media
