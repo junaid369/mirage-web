@@ -63,9 +63,9 @@ function ContactUs() {
         <div className="relative  py-28 max-sm:py-14 ">
           <div className="md:flex max-lg:justify-center max-lg:items-center md:mx-36 lg:mx-36 md:mb-30 max-sm:mx-5">
             <div className="md:w-3/6 max-sm:mb-8">
-              <h2 className="text-teal-800 font-semibold">GET IN TOUCH</h2>
+              <h2 className="gradient-text font-semibold">GET IN TOUCH</h2>
               <div className="md:max-w:sm">
-                <h1 className="max-sm:text-2xl  text-3xl font-serif   text-black  pt-6 md:max-w-md">
+                <h1 className="max-sm:text-2xl  text-3xl font-serif   gradient-text  pt-6 md:max-w-md">
                   Connecting for a Stronger Financial Future
                 </h1>
               </div>
@@ -76,7 +76,7 @@ function ContactUs() {
             </div>
             <div className="md:w-3/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
               <div className="text-center max-sm:mb-7 ">
-                <div className="text-teal-800  flex flex-col items-center justify-center  mb-2">
+                <div className="gradient-text  flex flex-col items-center justify-center  mb-2">
                   <i
                     aria-hidden="true"
                     className="mdi mdi-map-marker text-5xl"
@@ -88,7 +88,7 @@ function ContactUs() {
                 </p>
               </div>
               <div className="text-center max-sm:mb-7 ">
-                <div className="text-teal-800 flex flex-col items-center justify-center mb-2">
+                <div className="gradient-text flex flex-col items-center justify-center mb-2">
                   <i aria-hidden="true" className="mdi mdi-email text-5xl"></i>
                   <h3 className="ml-2 text-lg font-medium pt-5">Email Us</h3>
                 </div>
@@ -99,7 +99,7 @@ function ContactUs() {
                 </p>
               </div>
               <div className="text-center max-sm:mb-7">
-                <div className="text-teal-800 flex flex-col  items-center justify-center mb-2">
+                <div className="gradient-text flex flex-col  items-center justify-center mb-2">
                   <i
                     aria-hidden="true"
                     className="mdi mdi-phone-in-talk text-5xl"
@@ -118,9 +118,9 @@ function ContactUs() {
           {/* form start */}
 
           <div className="md:mx-36 lg:mx-36 max-sm:mx-5 md:flex gap-3">
-            <div className="mt-16  md:w-4/6">
-              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 max-lg:p-28 h-full">
-                <h2 className="text-3xl font-serif text-black">
+            <div className="mt-16  md:w-4/6 ">
+              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 lg:p-20 h-full">
+                <h2 className="text-3xl font-serif gradient-text">
                   Send us a message
                 </h2>
                 <p className="text-gray-600 mt-2">
@@ -163,14 +163,14 @@ function ContactUs() {
                   ></textarea>
                   <button
                     type="submit"
-                    className="bg-teal-800 text-white px-6 py-3 rounded-md mt-4 w-full"
+                    className=" bg-gradient-to-br from-blue-500   to-red-900  text-white px-6 py-3 rounded-md mt-4 w-full"
                   >
                     Send Message
                   </button>
                 </form>
               </div>
             </div>
-            <div className="md:w-2/6 mt-16">
+            <div className="md:w-2/6 mt-16 h-full">
               <div className="relative overflow-hidden">
                 <img
                   className="object-contain transform transition-transform duration-300 ease-in-out hover:translate-x-6 hover:scale-105"

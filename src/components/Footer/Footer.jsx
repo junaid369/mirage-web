@@ -43,11 +43,15 @@ function Footer() {
           <div className="flex gap-5">
             <div className="w-2/6">
               <div className="title flex-col items-center justify-center">
-                <img
-                  className="  w-44"
-                  src=" https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Logo-Utama-DUA-white.png"
-                  alt=""
-                />
+                <div className="bg-white h-20 w-36    ">
+                  <img
+                    // className="  w-44"
+                    className="h-20 w-36  object-cover"
+                    // src=" https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Logo-Utama-DUA-white.png"
+                    src="/public/mirage.png"
+                    alt=""
+                  />
+                </div>
                 <p className="text-white py-5">
                   Integer tempor porta iaculis morbi commodo molestie fames ex
                   dignissim
@@ -59,7 +63,7 @@ function Footer() {
                       type="text"
                       className="h-12 w-72 px-3"
                     />
-                    <div className="serach icon bg-teal-700 h-12  w-14 flex items-center justify-center">
+                    <div className="serach icon btn-gradient h-12  w-14 flex items-center justify-center">
                       <span class="mdi mdi-magnify text-4xl"></span>
                     </div>
                   </div>

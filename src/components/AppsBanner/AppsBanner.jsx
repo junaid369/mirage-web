@@ -133,7 +133,7 @@ function AppsBanner() {
             </div>
           </div>
           <div className="md:w-4/6 ">
-            <div className="md:flex gap-3 max-sm:mt-10">
+            <div className="md:flex gap-3 max-sm:mt-10 justify-center items-center">
               <div className=" content-1 bg-gray-200 h-64 w-96 rounded-md max-sm:mb-10 max-sm:ml-2 ">
                 <div className="p-5 mt-5 ">
                   <div className="contents">

@@ -25,7 +25,7 @@ function WhoweAre() {
   return (
     <div>
       <div className="bg-white py-12 md:mx-20  lg:mx-20 mb-28 ">
-        <div className="md:px-4 lg:px-4 max-sm:px-4  ">
+        <div className="md:px-4 lg:px-56 max-sm:px-4  ">
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
             <div className="relative ">
               <img

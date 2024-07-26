@@ -74,7 +74,7 @@ function MeetTeams() {
 
           <div className="relative pt-64">
             <h1 className="text-center text-white text-5xl md:text-6xl font-semibold">
-              About Us
+              Team
             </h1>
           </div>
           <h2 className="relative text-2xl text-white text-center pt-10 font-semibold">
@@ -110,12 +110,12 @@ function MeetTeams() {
 
       {/* why choose us */}
       <section className="whychoose mx-32 max-sm:mx-5 mb-20">
-        <h5 className="text-center text-teal-600 font-medium">WHY CHOOSE US</h5>
-        <h1 className="mt-4  title text-black text-center text-4xl max-sm:text-2xl font-medium">
+        <h5 className="text-center gradient-text font-medium">WHY CHOOSE US</h5>
+        <h1 className="mt-4  title gradient-text text-center text-4xl max-sm:text-2xl font-medium">
           {" "}
           Dedicated Support, Anytime,
         </h1>
-        <h1 className="  title text-black text-center text-4xl  pt-2 font-medium max-sm:text-2xl">
+        <h1 className="  title gradient-text text-center text-4xl  pt-2 font-medium max-sm:text-2xl">
           {" "}
           Anywhere
         </h1>
@@ -125,8 +125,8 @@ function MeetTeams() {
         </p>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:mx-0">
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600 max-sm:mb-8">
-            <div className="bg-teal-800 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
+          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600 max-sm:mb-8 h-60">
+            <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-account-cog text-white text-4xl"></i>
             </div>
             <div className="pt-12">
@@ -139,7 +139,7 @@ function MeetTeams() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
-            <div className="bg-teal-800 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
+            <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cellphone-cog text-white text-4xl"></i>
             </div>
             <div className="pt-12">
@@ -152,7 +152,7 @@ function MeetTeams() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
-            <div className="bg-teal-800 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
+            <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-headphones text-white text-4xl"></i>
             </div>
             <div className="pt-12">
@@ -165,7 +165,7 @@ function MeetTeams() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8">
-            <div className="bg-teal-800 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
+            <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cog-sync text-white text-4xl"></i>
             </div>
             <div className="pt-12">
@@ -184,10 +184,10 @@ function MeetTeams() {
 
       <section className="teamImages mx-32  max-sm:mx-5 mb-28">
         <div className="contents">
-          <h6 className="description text-center text-sm text-teal-600 font-medium">
+          <h6 className="description text-center text-sm gradient-text font-medium">
             PROFESSIONAL GUIDANCE
           </h6>
-          <h1 className="title text-4xl text-center font-medium pt-6 max-sm:text-2xl">
+          <h1 className="title text-4xl text-center font-medium pt-6 max-sm:text-2xl gradient-text">
             Meet the Experts Behind Your Success
           </h1>
         </div>
@@ -247,7 +247,7 @@ function MeetTeams() {
                 <h1 className="text-xl text-black pt-5 text-center">
                   {item.name}
                 </h1>
-                <h6 className="text-teal-700 text-xl text-center mb-10">
+                <h6 className="gradient-text text-xl text-center mb-10">
                   {item.title}
                 </h6>
               </div>

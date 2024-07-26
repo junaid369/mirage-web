@@ -33,7 +33,7 @@ function Banner() {
               "url('https://www.maleyat.ae/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4gm0l8ni%2Fmaleyat-ae%2F71f8568f16ccb761707a5612ab4eec8a14def041-1191x520.png%3Ffit%3Dmax%26auto%3Dformat&w=1200&q=75')",
           }}
         >
-          <div className="md:w-3/6  md:pt-48 max-lg:pt-96 animationLeft" ref={addElement}>
+          <div className="md:w-3/6  md:pt-72 max-lg:pt-96 animationLeft" ref={addElement}>
             <h1 className="text-center gradient-text   text-3xl  md:text-6xl font-serif">
               The Largest & Most Regualted Financial Derivatives Broker
               Worldwide
