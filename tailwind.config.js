@@ -1,32 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   // content: [],
-//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// };
-
-// // tailwind.config.js
-// module.exports = {
-//   theme: {
-//     extend: {
-//       height: {
-//         128: "52rem", // Example: Adding h-128
-//         120: "36rem", // Example: Adding h-144
-//         140: "36rem", // Example: Adding h-144
-//         160: "38rem", // Example: Adding h-144
-//         // Add more custom sizes as needed
-//       },
-//       colors: {
-//         check: "rgb(240,240,240)",
-//       },
-//     },
-//   },
-//   variants: {},
-//   plugins: [],
-// };
 
 // tailwind.config.js
 module.exports = {
