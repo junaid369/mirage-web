@@ -99,9 +99,9 @@ function News() {
             {stocks.map((stock) => (
               <div
                 key={stock.symbol}
-                className="bg-white m-2 p-4 rounded-lg shadow-md flex-shrink-0 w-64 bg-gradient-to-br from-teal-400  to-teal-200"
+                className="bg-white m-2 p-4 rounded-lg shadow-md flex-shrink-0 w-64 bg-gradient-to-br from-blue-400   to-red-500 "
               >
-                <h2 className="text-md font-semibold text-teal-900 mb-2">
+                <h2 className="text-md font-serif text-white mb-2">
                   {stock.symbol}
                 </h2>
                 <p

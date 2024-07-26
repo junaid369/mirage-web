@@ -119,7 +119,7 @@ function ContactUs() {
 
           <div className="md:mx-36 lg:mx-36 max-sm:mx-5 md:flex gap-3">
             <div className="mt-16  md:w-4/6 ">
-              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 lg:p-20 h-full">
+              <div className="bg-white shadow-md rounded-lg md:p-8 max-sm:p-8 lg:p-5 h-full">
                 <h2 className="text-3xl font-serif gradient-text">
                   Send us a message
                 </h2>
@@ -129,7 +129,7 @@ function ContactUs() {
                   maximus feugiat suscipit eleifend a letius sequis mod.
                 </p>
                 <form className="mt-8">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-lg:gap-14 ">
+                  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 max-sm:gap-4 max-lg:gap-14 ">
                     <input
                       type="text"
                       placeholder="Your Name"
@@ -143,17 +143,17 @@ function ContactUs() {
                     <input
                       type="text"
                       placeholder="Your Phone"
-                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 max-lg:mb-14"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 max-lg:mb-14 max-sm:mb-2"
                     />
                     <input
                       type="email"
                       placeholder="Your Email"
-                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16  max-lg:mb-14"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16  max-lg:mb-14 max-sm:mb-2"
                     />
                   </div>
                   <textarea
                     placeholder="Your Subject"
-                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 max-lg:mb-14 max-lg:h-16"
+                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 max-lg:mb-14 max-sm:mb-2 max-lg:h-16"
                     rows="1"
                   ></textarea>
                   <textarea

@@ -25,7 +25,7 @@ function WhoweAre() {
   return (
     <div>
       <div className="bg-white py-12 md:mx-20  lg:mx-20 mb-28 ">
-        <div className="md:px-4 lg:px-56 max-sm:px-4  ">
+        <div className="max-sm:px-4 md:px-0 lg:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2  gap-6">
             <div className="relative ">
               <img
@@ -34,7 +34,7 @@ function WhoweAre() {
                 className="max-sm:hidden absolute inset-0 md:pl-32 lg:pl-32 object-cover rounded-xl md:transform -translate-y-10"
               />
 
-              <div className="relative animationLeft" ref={addElement}>
+              <div className="relative animationLeft md:ml-5 lg:ml-5" ref={addElement}>
                 <img
                   className="max-sm:w-48 rounded-lg"
                   src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-3.jpg"
