@@ -62,7 +62,7 @@ function ContactUs() {
         {/* Content */}
         <div className="relative  py-28 max-sm:py-14 ">
           <div className="md:flex max-lg:justify-center max-lg:items-center md:mx-36 lg:mx-36 md:mb-30 max-sm:mx-5">
-            <div className="md:w-3.5/6 max-sm:mb-8">
+            <div className="md:w-3/6 max-sm:mb-8">
               <h2 className="text-teal-800 font-semibold">GET IN TOUCH</h2>
               <div className="md:max-w:sm">
                 <h1 className="max-sm:text-2xl  text-3xl font-serif   text-black  pt-6 md:max-w-md">
@@ -74,7 +74,7 @@ function ContactUs() {
                 velit efficitur mattis
               </p>
             </div>
-            <div className="md:w-2.5/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
+            <div className="md:w-3/6 md:grid grid-cols-3 items-center justify-center md:ml-20">
               <div className="text-center max-sm:mb-7 ">
                 <div className="text-teal-800  flex flex-col items-center justify-center  mb-2">
                   <i

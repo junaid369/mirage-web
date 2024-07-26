@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/mirage-web/",
+  // base: "/mirage-web/",
   plugins: [react()],
 });
 
@@ -15,3 +15,7 @@ export default defineConfig({
 //     outDir: 'dist', // Ensure this matches your `deploy` script
 //   },
 // });
+
+// "homepage": "https://junaid369.github.io/mirage-web",
+// "predeploy": "npm run build",
+//   "deploy": "gh-pages -d dist"
