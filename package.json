@@ -1,9 +1,9 @@
 {
+  "homepage": "https://junaid369.github.io/mirage-web",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://junaid369.github.io/mirage-web",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
