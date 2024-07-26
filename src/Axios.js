@@ -116,6 +116,7 @@ export const fetchNiftyFiftyNews = async () => {
 //   }
 // };
 export const NewsNew = async () => {
+  
   try {
     const response = await axios.get(
       `https://newsapi.org/v2/top-headlines?category=business&q=stock&apiKey=${NEWSAPI_KEY}`
