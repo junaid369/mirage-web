@@ -401,7 +401,7 @@ function Navbar() {
                     )}
                     {item === "Platform" && (
                       <a
-                        href="#"
+                        href="/Platform"
                         className="block py-2 px-4 text-red-900 hover:text-black"
                       >
                         Meta Trader 5
