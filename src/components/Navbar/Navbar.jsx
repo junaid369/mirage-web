@@ -68,7 +68,7 @@ function Navbar() {
                 </a>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
-                    href="#"
+                    href="/Platform"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Meta Trader 5

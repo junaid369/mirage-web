@@ -7,6 +7,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import MeetTeam from "./pages/MeetTeam/MeetTeam";
 import News from "./pages/News/News";
+import TradingPlatform from "./pages/Platform/TradingPlatform";
 const App = () => {
   return (
     <div className="">
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/Careers" element={<About />} />
           <Route path="/Team" element={<MeetTeam />} />
           <Route path="/News" element={<News />} />
+          <Route path="/Platform" element={<TradingPlatform />} />
         </Routes>
       </Router>
     </div>
