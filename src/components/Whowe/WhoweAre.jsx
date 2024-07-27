@@ -67,17 +67,19 @@ function WhoweAre() {
                 ref={addElement}
               >
                 <img
+                
                   className="max-sm:w-48 rounded-lg"
                   src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-3.jpg"
                   alt=""
                 />
               </div>
               <div
-                className=" animationRight  max-sm:bottom-8  md:bottom-8 lg:bottom-8 right-0 md:right-6  lg:right-6 transform translate-y-1/4"
+                className="animationRight  max-sm:bottom-8  md:bottom-8 lg:bottom-8 right-0 md:right-6  lg:right-6 "
                 ref={addElement}
               >
+
                 <img
-                  className="max-sm:w-48 rounded-lg"
+                  className="max-sm:w-48 rounded-lg transform translate-y-1/4"
                   src="https://thepixelcurve.com/html/techwix/techwix/assets/images/about-4.jpg"
                   alt=""
                 />
