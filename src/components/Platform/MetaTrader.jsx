@@ -412,9 +412,13 @@ function MetaTrader() {
       {/* features */}
 
       <div className="bg-slate-100  mt-20 max-sm:p-8 md:p-8  lg:p-5 flex flex-col  md:gap-5 lg:gap-1 lg:flex-row md:flex-row  mb-10 max-sm:mx-2  md:mx-1 lg:mx-5">
-        <div className="md:w-2/6  lg:w-3/6   flex flex-col justify-center">
+        <div className="md:w-2/6  lg:w-3/6   flex flex-col justify-center lg:items-center">
           <h1 className="text-3xl font-bold mb-4">MT5 Features</h1>
-          <p className="text-md lg:text-lg">
+          <p className="text-md lg:text-lg lg:text-center lg:max-w-lg">
+            Gain access to fast processing speeds and customisable trading
+            tools.
+            Gain access to fast processing speeds and customisable trading
+            tools.
             Gain access to fast processing speeds and customisable trading
             tools.
           </p>
