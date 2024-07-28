@@ -93,30 +93,32 @@ function WhoweAre() {
                 Who We Are
               </h3>
               <h2 className="mt-2 text-3xl font-normal   gradient-text">
-                Highly Tailored IT Design, Management & Support Services.
+                Leading UAE Trading Platform: Mirage Trading
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Accelerate innovation with world-class tech teams. We’ll match
-                you to an entire remote team or incredible freelance talent for
-                all your software development needs.
+                Mirage Trading is a regulated trading platform based in the UAE, renowned as the world’s largest second-hand trading platform and the leading trading platform in the UAE. Our platform has gained a stellar reputation for providing a secure and efficient marketplace for traders worldwide. We are dedicated to maintaining the highest standards of regulatory compliance, ensuring a safe and trustworthy environment for our users.
               </p>
-              <hr className="mt-1" />
-              <div className="mt-8">
+              <p className="mt-4 text-lg text-gray-600">
+                At Mirage Trading, we offer a branded application that allows customers to trade seamlessly using MetaTrader 4 or MetaTrader 5 with the same credentials. This integration provides our users with a flexible and powerful trading experience, enabling them to execute trades, analyze market trends, and manage their portfolios with ease. Our platform combines cutting-edge technology with user-friendly features, making it the preferred choice for traders seeking a reliable and comprehensive trading solution. </p>
+              {/* <hr className="mt-1" /> */}
+
+              {/* <div className="mt-8">
                 <h3 className="gradient-text text-md font-bold  ">
                   Our Mission
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  Accelerate innovation with world-class tech teams. We help
-                  businesses elevate their value.
+                  Our mission is to empower traders by providing a secure, regulated, and profitable trading environment. We aim to
+                  guide our clients with strategies that maximize their success and minimize risks.
+
                 </p>
                 <h3 className="mt-4 text-md font-bold gradient-text">
-                  Custom Code
+                  Our Vision
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  Accelerate innovation with world-class tech teams. We help
-                  businesses elevate their value.
+                  To be the leading trading platform in the UAE, known for integrity, reliability, and client satisfaction. We envision
+                  a future where every trader can achieve consistent profits and financial freedom through our platform.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

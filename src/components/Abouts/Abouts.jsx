@@ -43,12 +43,10 @@ function Abouts() {
             Our Value
           </h6>
           <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold">
-            Your Success is Our Priority
+            Seamless and Secure Trading with Mirage Trading
           </h4>
           <p className="pl-10   lg:pl-24 mt-5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus,<br></br> luctus nec ullamcorper mattis, pulvinar dapibus
-            leo.
+            Providing a secure, user-friendly trading platform integrated with MetaTrader 4 and 5, Mirage Trading ensures seamless trading experiences and regulatory compliance, making us the trusted choice for traders globally.
           </p>
           <div className="flex ml-10 lg:ml-24 mt-8">
             <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
@@ -60,8 +58,8 @@ function Abouts() {
             <div className=" mx-5 lg:mx-3 w-2/3 ">
               <h2 className=" text-xl lg:text-2xl gradient-text">Our Vision</h2>
               <p className="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                To be the leading trading platform in the UAE, known for integrity, reliability, and client satisfaction. We envision
+                a future where every trader can achieve consistent profits and financial freedom through our platform.
               </p>
             </div>
           </div>
@@ -75,8 +73,8 @@ function Abouts() {
             <div className="mx-5 lg:mx-3 w-2/3">
               <h2 className="text-xl  lg:text-2xl gradient-text">Our Mission</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Our mission is to empower traders by providing a secure, regulated, and profitable trading environment. We aim to
+                guide our clients with strategies that maximize their success and minimize risks.
               </p>
             </div>
           </div>
@@ -104,7 +102,7 @@ function Abouts() {
         </div>
         <div className="lg:w-2/6  flex flex-col animationRight" ref={addElement}>
           <img
-          className=" hover:-translate-x-20 "
+            className=" hover:-translate-x-20 "
             src="https://www.maleyat.ae/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4gm0l8ni%2Fmaleyat-ae%2Fd21aa3b0393a607307c894d30bc04be02bec8e81-640x493.webp%3Ffit%3Dmax%26auto%3Dformat&w=640&q=75"
             alt=""
             srcset=""
