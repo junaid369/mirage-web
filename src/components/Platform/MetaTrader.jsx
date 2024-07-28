@@ -71,7 +71,6 @@ function MetaTrader() {
       // image: "public/graph2.jpeg",
       image: "https://mirage-web-six.vercel.app/graph2.jpeg",
 
-
       title: "3 fully customisable charts",
       description:
         "Quickly switch between different saved custom chart templates.",
@@ -79,7 +78,6 @@ function MetaTrader() {
     {
       // image: "public/graph3.jpeg",
       image: "https://mirage-web-six.vercel.app/graph3.jpeg",
-
 
       title: "21 timeframes",
       description:
@@ -89,7 +87,6 @@ function MetaTrader() {
       // image: "public/graph4.jpeg",
       image: "https://mirage-web-six.vercel.app/graph4.jpeg",
 
-
       title: "38 technical indicators",
       description:
         "Identify trends and patterns through a wide selection of 38 different indicators.",
@@ -97,7 +94,6 @@ function MetaTrader() {
     {
       // image: "public/graph5.jpeg",
       image: "https://mirage-web-six.vercel.app/graph5.jpeg",
-
 
       title: "6 pending orders types",
       description:
@@ -107,7 +103,6 @@ function MetaTrader() {
     {
       // image: "public/graph6.jpeg",
       image: "https://mirage-web-six.vercel.app/graph6.jpeg",
-
 
       title: "Built-in economic calendar",
       description:
@@ -398,24 +393,23 @@ function MetaTrader() {
 
       {/* features */}
 
-
-      <div className="bg-slate-100  p-8 flex flex-col lg:flex-row md:flex-row  mb-10 max-sm:mx-2  md:mx-5">
-        <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
+      <div className="bg-slate-100 max-sm:p-8 md:p-8  lg:p-5 flex flex-col  md:gap-5 lg:gap-1 lg:flex-row md:flex-row  mb-10 max-sm:mx-2  md:mx-1 lg:mx-5">
+        <div className="md:w-2/6  lg:w-3/6   flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-4">MT5 Features</h1>
-          <p className="text-lg">
+          <p className="text-md lg:text-lg">
             Gain access to fast processing speeds and customisable trading
             tools.
           </p>
         </div>
 
-        <div className="md:w-3/6 flex  overflow-x-auto gap-2 md:gap-5 overflow-hidden h-[420px] max-sm:mt-5  ">
+        <div className="max-sm:w-6/6  md:w-4/6 lg:w-3/6 flex  overflow-x-auto gap-2 md:gap-3 lg:gap-5 overflow-hidden max-sm:h-[330px] md:h-[350px]    lg:h-[420px] max-sm:mt-5  ">
           {itemsForList.map((item, index) => (
-            <div className="each item   min-w-80 flex flex-col  shadow-lg   border-2 bg-white rounded-3xl h-96 ">
-              <div className=" p-5">
+            <div className="each item max-sm:min-w-64  md:min-w-64 lg:min-w-80 flex flex-col  shadow-lg   border-2 bg-white rounded-3xl md:h-80   lg:h-96 ">
+              <div className="p-5">
                 <img src={item.image} alt={item.title} className="" />
               </div>
               <div className="p-5">
-                <h2 className="text-lg font-bold ">{item.title}</h2>
+                <h2 className="text-md lg:text-lg font-bold ">{item.title}</h2>
                 <p className="text-sm mt-2 ">{item.description}</p>
               </div>
             </div>
