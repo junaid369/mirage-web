@@ -188,7 +188,7 @@ function Abouts() {
         <h1 className="title text-4xl text-black font-bold">
           Why Choose <span className="gradient-text">Mirage?</span>
         </h1>
-        <p className="text-lg text-black font-semibold pt-6">
+        <p className="text-lg text-black  pt-6">
           Trade with Maleyat for unparalleled transparency and 5-star customer
           support, backed by 15 years of market expertise and a commitment to
           protecting your funds. Trade with Maleyat for unparalleled

@@ -61,34 +61,43 @@ function MetaTrader() {
   ];
   const itemsForList = [
     {
-      image: "public/graph1.jpeg",
+      // image: "public/graph1.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph1.jpeg",
       title: "Expert Advisor trading",
       description:
         "Automate your trading by creating or downloading an Expert Advisor programme.",
     },
     {
-      image: "public/graph2.jpeg",
+      // image: "public/graph2.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph2.jpeg",
+
 
       title: "3 fully customisable charts",
       description:
         "Quickly switch between different saved custom chart templates.",
     },
     {
-      image: "public/graph3.jpeg",
+      // image: "public/graph3.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph3.jpeg",
+
 
       title: "21 timeframes",
       description:
         "Choose from 21 different timeframes, starting from 1 minute to 1 month.",
     },
     {
-      image: "public/graph4.jpeg",
+      // image: "public/graph4.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph4.jpeg",
+
 
       title: "38 technical indicators",
       description:
         "Identify trends and patterns through a wide selection of 38 different indicators.",
     },
     {
-      image: "public/graph5.jpeg",
+      // image: "public/graph5.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph5.jpeg",
+
 
       title: "6 pending orders types",
       description:
@@ -96,7 +105,9 @@ function MetaTrader() {
     },
 
     {
-      image: "public/graph6.jpeg",
+      // image: "public/graph6.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph6.jpeg",
+
 
       title: "Built-in economic calendar",
       description:
