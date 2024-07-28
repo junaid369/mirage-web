@@ -69,7 +69,7 @@ function Abouts() {
             <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
               <i
                 aria-hidden="true"
-                className="mdi mdi-bullseye-arrow text-white text-2xl lg:text-4x"
+                className="mdi mdi-bullseye-arrow text-white text-2xl lg:text-4xl"
               ></i>
             </div>
             <div className="mx-5 lg:mx-3 w-2/3">
@@ -104,6 +104,7 @@ function Abouts() {
         </div>
         <div className="lg:w-2/6  flex flex-col animationRight" ref={addElement}>
           <img
+          className=" hover:-translate-x-20 "
             src="https://www.maleyat.ae/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4gm0l8ni%2Fmaleyat-ae%2Fd21aa3b0393a607307c894d30bc04be02bec8e81-640x493.webp%3Ffit%3Dmax%26auto%3Dformat&w=640&q=75"
             alt=""
             srcset=""

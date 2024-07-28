@@ -4,8 +4,28 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import useIntersectionObserver from "../../components/Observer/Observer";
+
 
 function MeetTeams() {
+  const addElement = useIntersectionObserver(
+    (element) => {
+      if (element.classList.contains("animationLeft")) {
+        element.classList.add("animation"); // Add animate class when element is in view
+      } else if (element.classList.contains("animationRight")) {
+        element.classList.add("animation-slide-in-right"); // Add animate class when element is in view
+      } else if (element.classList.contains("topToBottom")) {
+        element.classList.add("animation-slideInTop"); // Add animate class when element is in view
+      } else if (element.classList.contains("bottomToTop")) {
+        element.classList.add("animation-slideInBottom"); // Add animate class when element is in view
+      } else if (element.classList.contains("scaleUp")) {
+        element.classList.add("animation-scaleUp"); // Add animate class when element is in view
+      } else if (element.classList.contains("ZoomInOut")) {
+        element.classList.add("animation-ZoomInOut"); // Add animate class when element is in view
+      }
+    },
+    { threshold: 0.1 }
+  );
   const teamMembers = [
     {
       name: "John Anderson",
@@ -125,7 +145,10 @@ function MeetTeams() {
         </p>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 lg:mx-0">
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600 max-sm:mb-8 h-60">
+                <div className="bg-white animationLeft p-6 rounded-md shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
+                ref={addElement}
+
+                 >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-account-cog text-white text-4xl"></i>
             </div>
@@ -138,7 +161,10 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
+          <div className="bg-white p-6 animationLeft rounded-md shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
+                ref={addElement}
+
+          >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cellphone-cog text-white text-4xl"></i>
             </div>
@@ -151,7 +177,10 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
+                <div className="bg-white p-6 animationRight rounded-md shadow-lg relative   max-sm:mb-8 h-60 hover:scale-105"  
+                ref={addElement}
+                
+                >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-headphones text-white text-4xl"></i>
             </div>
@@ -164,7 +193,10 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-md shadow-lg relative hover:border border-1 border-teal-600  max-sm:mb-8 h-60">
+          <div className="bg-white p-6 rounded-md animationRight shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
+                ref={addElement}
+          
+          >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cog-sync text-white text-4xl"></i>
             </div>
@@ -194,11 +226,11 @@ function MeetTeams() {
         <div className="grid lg:grid-cols-4  md:grid-cols-2 max-sm:grid-cols-1 md:gap-4 lg:gap-10 mt-14 max-sm:flex flex-col max-sm:justify-center max-sm:items-center">
           {teamMembers.map((item, index) => {
             return (
-              <div className="singleMember  shadow-md  w-72  max-sm:w-96 hover:border border-1 hover: border-teal-600  rounded-xl">
+              <div className="singleMember  shadow-md  w-72  max-sm:w-96  rounded-xl  ">
                 <div className="flex  gap-3 max-sm:gap-10 ">
                   <div className="flex flex-col ml-4 mt-16">
                     <ul class="ekit_social_media ">
-                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2">
+                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2 hover:scale-125">
                         <a
                           href="https://facebook.com"
                           aria-label="Facebook"
@@ -207,7 +239,7 @@ function MeetTeams() {
                           <FaInstagram className="text-teal-700" />
                         </a>
                       </li>
-                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2">
+                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2 hover:scale-125">
                         <a
                           href="https://facebook.com"
                           aria-label="Facebook"
@@ -216,7 +248,7 @@ function MeetTeams() {
                           <FaFacebookF className="text-teal-700" />
                         </a>
                       </li>
-                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2">
+                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2 hover:scale-125">
                         <a
                           href="https://facebook.com"
                           aria-label="Facebook"
@@ -225,13 +257,13 @@ function MeetTeams() {
                           <FaLinkedinIn className="text-teal-700" />
                         </a>
                       </li>
-                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2">
+                      <li className="border border-1 border-teal-700 rounded-full h-8 w-8 flex justify-center items-center mb-2 hover:scale-125">
                         <a
                           href="https://facebook.com"
                           aria-label="Facebook"
                           class="facebook"
                         >
-                          <FaXTwitter className="text-teal-700" />
+                          <FaXTwitter className="text-teal-700 " />
                         </a>
                       </li>
                     </ul>
@@ -240,7 +272,7 @@ function MeetTeams() {
                     <img
                       src={item.image}
                       alt=""
-                      className="rounded-full w-52 h-52"
+                      className="rounded-full w-52 h-52   hover:scale-105  "
                     />
                   </div>
                 </div>
