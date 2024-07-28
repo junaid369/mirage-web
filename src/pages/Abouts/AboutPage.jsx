@@ -5,6 +5,7 @@ import AboutsDetails from "../../components/Abouts/Abouts";
 import Footer from "../../components/Footer/Footer";
 import useIntersectionObserver from "../../components/Observer/Observer";
 import Invest from "../../components/InvestWIthUs/Invest";
+import "../../pages/animation.css";
 
 import { Height } from "@mui/icons-material";
 
@@ -118,6 +119,90 @@ function Abouts() {
       </div>
       <WhoweAre />
 
+      {/* values */}
+      <section className="values mb-20 bg-gray-900 py-10">
+        <div className="  md:mx-5  lg:mx-20 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-2 max-sm:mx-2   md:p-0  lg:p-10 md:justify-center md:items-center ">
+          <div className="first item ">
+            <div className="image rounded-2xl  flex justify-center items-center  zoom-container">
+              <img
+                className="rounded-2xl  w-full h-full  object-cover transition-transform duration-300"
+                src="https://www.yamarkets.com/public/web/img/goals.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="second item">
+            <div className="content ">
+              <h1 className="text-xl px-3 font-serif text-yellow-400">Our Vision</h1>
+              <p className="text-md px-3 text-white">
+                We envision YaMarkets as a thriving international financial
+                trading entity, delivering steadfast brokerage services while
+                maximizing benefits for our partners and traders. Our success is
+                built upon our people, our clients, and our employees, along
+                with innovative trading solutions and advanced technology.
+              </p>
+            </div>
+          </div>
+
+          <div className="forth item max-sm:hidden lg:hidden">
+            <div className="contents ">
+              <p className="text-md px-3  text-white">
+                We envision YaMarkets as a thriving international financial
+                trading entity, delivering steadfast brokerage services while
+                maximizing benefits for our partners and traders. Our success is
+                built upon our people, our clients, and our employees, along
+                with innovative trading solutions and advanced technology.
+              </p>
+            </div>
+          </div>
+
+          <div className="third item">
+            <div className="image zoom-container rounded-2xl  ">
+              <img
+                className="rounded-2xl  w-full h-full  object-cover transition-transform duration-300"
+                src="https://www.yamarkets.com/public/web/img/values.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="forth item md:hidden lg:block">
+            <div className="contents ">
+              <p className="text-md px-3  text-white  py-5">
+                We envision YaMarkets as a thriving international financial
+                trading entity, delivering steadfast brokerage services while
+                maximizing benefits for our partners and traders. Our success is
+                built upon our people, our clients, and our employees, along
+                with innovative trading solutions and advanced technology.
+              </p>
+            </div>
+          </div>
+          <div className="fifth item ">
+            <div className="image rounded-2xl  flex justify-center items-center   zoom-container">
+              <img
+                className="rounded-2xl  w-full h-full  object-cover transition-transform duration-300"
+                src="https://www.yamarkets.com/public/web/img/vision.jpg"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="sixth item">
+            <div className="contents py-5">
+              <h1 className="text-xl px-3 font-serif text-yellow-400  pt-3">Our Mission</h1>
+              <p className="text-md px-3   text-white  pt-2">
+                We envision YaMarkets as a thriving international financial
+                trading entity, delivering steadfast brokerage services while
+                maximizing benefits for our partners and traders. Our success is
+                built upon our people, our clients, and our employees, along
+                with innovative trading solutions and advanced technology.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* who we are */}
       {/* <div className="bg-white py-12 h-128 md:mx-20  mb-28">
         <div className=" mx-auto px-4 sm:px-6 max-lg:px-44">
@@ -184,7 +269,7 @@ function Abouts() {
 
       {/* end */}
       {/* why choose */}
-      <div className="choosemirage md:mx-28 max-sm:mx-5">
+      <div className="choosemirage md:mx-10  lg:mx-28 max-sm:mx-5 mb-10">
         <h1 className="title text-4xl text-black font-bold">
           Why Choose <span className="gradient-text">Mirage?</span>
         </h1>
@@ -204,7 +289,7 @@ function Abouts() {
       {/* <WhoweAre /> */}
       <AboutsDetails />
       {/* key strength */}
-      <div className="keyfeatures md:mx-28 mx-5 mt-16 mb-16">
+      <div className="keyfeatures md:mx-5 lg:mx-28   mx-5 mt-16 mb-16">
         <h1 className="gradient-text text-4xl text-center font-bold">
           Our Key Strengths
         </h1>
@@ -216,7 +301,7 @@ function Abouts() {
           trading.
         </p>
 
-        <div className="features md:grid grid-cols-4 max-sm:grid-cols-1 md:gap-3 items-center md:mx-72 mx-4 mt-8 cursor-pointer">
+        <div className="features grid  md:grid-cols-4   lg:grid-cols-4   max-sm:grid-cols-1 md:gap-3 items-center md:mx-10 lg:mx-72 mx-4 mt-8 cursor-pointer">
           {[
             {
               src: "https://tatapowertrading.com/wp-content/uploads/2021/06/Skilled-Team.jpg",
@@ -265,7 +350,7 @@ function Abouts() {
             },
           ].map((item, index) => (
             <div
-              className="image-container relative flex md:justify-center max-sm:mb-6"
+              className="image-container relative flex md:justify-center   max-sm:mb-6"
               key={index}
             >
               <div className="absolute  bg-gradient-to-b from-transparent to-black"></div>

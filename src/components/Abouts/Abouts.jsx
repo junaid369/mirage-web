@@ -26,7 +26,7 @@ function Abouts() {
   return (
     <div>
       {/* details abouts */}
-      <section className="details mt-8 lg:flex md:mx-10 lg:mx-24 mb-20">
+      <section className="details mt-8 lg:flex md:mx-5 lg:mx-24 mb-20">
         <div className="flex max-sm:w-6/6 lg:w-3/6 md:justify-center md:items-center ">
           <img
             src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/two-stock-exchange-traders-getting-profit-in-trading-currency-stock--1536x1022.jpg"
