@@ -134,7 +134,7 @@ function MetaTrader() {
   return (
     <div class="mt-24">
       {/* banner */}
-      <section class="banner bg-slate-800 mb-20">
+      <section class="banner bg-slate-800 mb-10">
         <div class="lg:flex items-center justify-center lg:mx-10 pt-16 lg:pt-0 md:h-md-800 lg:h-[500px]">
           <div class="max-sm:w-6/6 md:w-6/6 lg:w-3/6 max-sm:mx-5 md:mx-5 lg:mx-0">
             <h1 class="max-sm:text-3xl text-5xl text-white lg:ml-20 font-serif">
@@ -152,6 +152,49 @@ function MetaTrader() {
               src="https://www.forex.com/en/-/media/project/gain-capital/forex/heroes/platforms/metatrader/fxca_mt5_header-mobile.png?h=469&amp;iar=0&amp;w=616&amp;extension=webp&amp;hash=6"
               alt=""
             />
+          </div>
+        </div>
+      </section>
+
+      {/* what is metatrader */}
+      <section className="details bg-slate-100 mb-10">
+        <div className="md:flex   md:mx-3  lg:mx-10 md:gap-1 lg:gap-3">
+          <div className="md:w-3/6 p-8 flex justify-center items-center">
+            <div className="image ">
+              <img
+                src="https://hmarkets.com/wp-media/2022/07/mt4_mobile.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="md:w-3/6 p-8 flex flex-col justify-center ">
+            <div className="contents ">
+              <div className="title">
+                <h1 className="text-3xl  lg:text-6xl font-serif">
+                  What is MetaTrader 5?
+                </h1>
+              </div>
+              <div className="description mt-5 lg:mt-12">
+                <p className="max-sm:text-sm  text-md text-justify">
+                  MetaTrader 5, commonly known as MT5, is the latest and most
+                  powerful online trading platform developed for retail
+                  financial traders.
+                </p>
+                <p className="max-sm:text-sm  text-md text-justify pt-3">
+                  This platform retains the interface you may already be
+                  familiar with, in MT4, but boasts superior market depth,
+                  technical tools, customisations and much more.
+                </p>
+                <p className="max-sm:text-sm  text-md text-justify pt-3">
+                  Making MT5 not only an easy to use platform for beginners, but
+                  the perfect platform for traders looking to better their
+                  trading skills. It is also a great platform for multi-asset
+                  and experienced traders looking to widen their portfolios and
+                  achieve more accurate technical analysis.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -262,12 +305,41 @@ function MetaTrader() {
           ))}
         </div>
       </div>
-      {/* why trade */}
+      {/* devices */}
       <section class="mt-10 mb-10">
+        <div class="bg-gradient-to-br from-sky-900 to-red-500 max-sm:h-[600px] h-[500px] max-sm:rounded-bl-8xl md:rounded-bl-10xl lg:rounded-bl-12xl lg:flex md:flex items-center">
+          <div class="lg:w-3/6 md:w-3/6 md:flex-col lg:flex-col items-center max-sm:mx-5 max-sm:pt-28 md:mx-5 lg:mx-10">
+            <div class="title">
+              <h1 class="max-sm:text-4xl md:text-4xl lg:text-5xl font-serif font-normal text-white">
+                <span class="text-red-500">Trade</span> on all devices
+              </h1>
+            </div>
+            <div class="details max-sm:mt-3 mt-5">
+              <h1 class="text-md text-white lg:max-w-lg">
+                Embrace the ease and versatility of trading with MT5 on any
+                device. Be it Web, Desktop, Android, or iOS, MT5 integrates
+                flawlessly, promising a smooth trading journey no matter where
+                you are.
+              </h1>
+            </div>
+          </div>
+          <div class="max-sm:flex justify-center md:w-3/6 md:mx-2 lg:mx-0 lg:w-3/6">
+            <div class="image">
+              <img
+                class="max-sm:h-64"
+                src="https://d1hnl85qs9kdbt.cloudfront.net/wp-content/uploads/2023/08/11205820/Image.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* why trade */}
+      <section class="mt-10 mb-10 ">
         <h1 class="h-16 text-black max-sm:text-3xl md:text-3xl lg:text-5xl text-center font-bold">
           Why trade with <span class="gradient-text">Mirage</span> MT5
         </h1>
-        <div class="max-sm:mx-5 md:mx-5 lg:mx-28 lg:flex md:flex max-sm:mt-20 md:mt-5 lg:mt-10">
+        <div class="max-sm:mx-5 md:mx-5 lg:mx-28 lg:flex md:flex max-sm:mt-5 md:mt-5 lg:mt-10 ">
           <div class="lg:w-2/6 md:w-2/6 md:pt-10 lg:pt-28">
             <div class="contents flex-col">
               <div class="firstcontents">
@@ -337,63 +409,9 @@ function MetaTrader() {
           </div>
         </div>
       </section>
-
-      <section className="additional bg-slate-100 ">
-        <h1 className="text-center text-4xl pt-7 font-medium gradient-text">
-          Additional perks
-        </h1>
-        <div className="lg:mx-20 grid grid-cols-1 lg:grid-cols-3 gap-10 p-10 lg:p-20">
-          {items.map((item, index) => (
-            <div
-              key={index}
-              className="items flex flex-col justify-center items-center"
-            >
-              <div className="image">
-                <img src={item.image} className="h-10 w-10" alt="" />
-              </div>
-              <div className="title mt-5">
-                <h1 className="text-center text-xl">{item.title}</h1>
-              </div>
-              <div className="contents mt-5">
-                <h1 className="text-center text-sm pt-2">{item.description}</h1>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-      {/* devices */}
-      <section class="mt-10 mb-10">
-        <div class="bg-gradient-to-br from-sky-900 to-red-500 max-sm:h-[600px] h-[500px] max-sm:rounded-bl-8xl md:rounded-bl-10xl lg:rounded-bl-12xl lg:flex md:flex items-center">
-          <div class="lg:w-3/6 md:w-3/6 md:flex-col lg:flex-col items-center max-sm:mx-5 max-sm:pt-28 md:mx-5 lg:mx-10">
-            <div class="title">
-              <h1 class="max-sm:text-4xl md:text-4xl lg:text-5xl font-serif font-normal text-white">
-                <span class="text-red-500">Trade</span> on all devices
-              </h1>
-            </div>
-            <div class="details max-sm:mt-3 mt-5">
-              <h1 class="text-md text-white lg:max-w-lg">
-                Embrace the ease and versatility of trading with MT5 on any
-                device. Be it Web, Desktop, Android, or iOS, MT5 integrates
-                flawlessly, promising a smooth trading journey no matter where
-                you are.
-              </h1>
-            </div>
-          </div>
-          <div class="max-sm:flex justify-center md:w-3/6 md:mx-2 lg:mx-0 lg:w-3/6">
-            <div class="image">
-              <img
-                class="max-sm:h-64"
-                src="https://d1hnl85qs9kdbt.cloudfront.net/wp-content/uploads/2023/08/11205820/Image.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* features */}
 
-      <div className="bg-slate-100 max-sm:p-8 md:p-8  lg:p-5 flex flex-col  md:gap-5 lg:gap-1 lg:flex-row md:flex-row  mb-10 max-sm:mx-2  md:mx-1 lg:mx-5">
+      <div className="bg-slate-100  mt-20 max-sm:p-8 md:p-8  lg:p-5 flex flex-col  md:gap-5 lg:gap-1 lg:flex-row md:flex-row  mb-10 max-sm:mx-2  md:mx-1 lg:mx-5">
         <div className="md:w-2/6  lg:w-3/6   flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-4">MT5 Features</h1>
           <p className="text-md lg:text-lg">
@@ -416,6 +434,30 @@ function MetaTrader() {
           ))}
         </div>
       </div>
+
+      <section className="additional bg-white">
+        <h1 className="text-center text-4xl pt-7 font-medium gradient-text">
+          Additional perks
+        </h1>
+        <div className="lg:mx-20 grid grid-cols-1 lg:grid-cols-3 gap-10 p-10 lg:p-20">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="items flex flex-col justify-center items-center"
+            >
+              <div className="image">
+                <img src={item.image} className="h-10 w-10" alt="" />
+              </div>
+              <div className="title mt-5">
+                <h1 className="text-center text-xl">{item.title}</h1>
+              </div>
+              <div className="contents mt-5">
+                <h1 className="text-center text-sm pt-2">{item.description}</h1>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* <div className="bg-slate-100 p-8 flex flex-col lg:flex-row md:flex-row mb-10 max-sm:mx-2 md:mx-10">
         <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
