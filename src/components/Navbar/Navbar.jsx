@@ -141,13 +141,12 @@ function Navbar() {
                   >
                     Market Insights
                   </a>
-                  {/* <a href="#" className="block py-2 px-4 text-white hover:text-teal-400">News</a> */}
-                  {/* <a href="#" className="block py-2 px-4 text-white hover:text-teal-400">Page 3</a> */}
+                
                 </div>
               </div>
             </div>
             <button className="hidden md:flex items-center space-x-3 btn-hover-gradient rounded-lg hover: transition duration-300">
-              <a href="#" className="py-2 px-5 text-md    text-white   ">
+              <a href="/contactUs" className="py-2 px-5 text-md    text-white   ">
                 START INVESTING
               </a>
             </button>
