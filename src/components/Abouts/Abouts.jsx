@@ -93,8 +93,7 @@ function Abouts() {
             Start Trading Today and Unlock Your Financial Potential
           </h1>
           <p className=" text-white mt-3 text-lg mx-10">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Begin trading with Mirage Trading today and unlock your path to financial success. Harness advanced tools and real-time insights to achieve your investment goals.
           </p>
           <button className="mx-10 px-8 mt-4 py-4 bg-gradient-to-br from-blue-500   to-red-900 text-white font-bold rounded-full gradient-border-inner:border-white hover:border-2">
             Start Trading Now!

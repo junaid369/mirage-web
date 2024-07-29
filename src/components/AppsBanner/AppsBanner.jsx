@@ -45,8 +45,7 @@ function AppsBanner() {
               </h1>
             </div>
             <p className="text-white pt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Experience uninterrupted trading with Mirage Trading, accessible on any device, anytime. Trade seamlessly and stay connected to the markets wherever you are.
             </p>
             <div className="flex gap-4 md:mt-10 md:ml-10 lg:ml-0 lg:mt-3">
               <img
@@ -59,11 +58,11 @@ function AppsBanner() {
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Asset-3@300x-8-1536x465.png"
                 alt=""
               />
-              <img
+              {/* <img
                 className=" md:w-32  lg:w-48 lg:object-fill md:object-contain"
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Microsoft-White-2048x620.png"
                 alt=""
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -79,8 +78,7 @@ function AppsBanner() {
               {/* </h1> */}
             </div>
             <p className="text-white pt-5 text-center px-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Experience uninterrupted trading with Mirage Trading, accessible on any device, anytime. Trade seamlessly and stay connected to the markets wherever you are.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-3">
               <img
@@ -93,11 +91,11 @@ function AppsBanner() {
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Asset-3@300x-8-1536x465.png"
                 alt=""
               />
-              <img
+              {/* <img
                 className=" w-48  object-fill"
                 src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/Microsoft-White-2048x620.png"
                 alt=""
-              />
+              /> */}
             </div>
           </div>
           <div className=" h-96 bg-neutral-800">
@@ -120,9 +118,7 @@ function AppsBanner() {
               <h1 className="text-4xl font-serif gradient-text">Our Clients Reviews</h1>
               <div className="mt-3">
                 <p className="text-md text-gray-600 ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
+                  Our clients consistently praise our secure, user-friendly platform and seamless trading experience. Discover why traders worldwide choose Mirage Trading.
                 </p>
               </div>
               <div className="mt-5">
@@ -138,10 +134,8 @@ function AppsBanner() {
                 <div className="p-5 mt-5 ">
                   <div className="contents">
                     <p className="text-gray-400 ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo. Ut elit tellus, luctus nec ullamcorper
-                      mattis, pulvinar dapibus leo.
+                      Mirage Trading has transformed my trading experience. Their strategies are reliable, and I’ve seen consistent
+                      profits every month.
                     </p>
                   </div>
                   <div className="image flex mt-3 gap-3">
@@ -154,10 +148,10 @@ function AppsBanner() {
                     </div>
                     <div className="userDetails pt-3">
                       <h1 className="text-black text-md font-medium text-sm">
-                        Root Stanley
+                        Ahmed
                       </h1>
                       <h1 className="gradient-text font-medium text-sm">
-                        CEO MACHINEX
+                        Dubai, UAE
                       </h1>
                     </div>
                   </div>
@@ -167,10 +161,8 @@ function AppsBanner() {
                 <div className="p-5 mt-5 ">
                   <div className="contents">
                     <p className="text-gray-400 ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                      dapibus leo. Ut elit tellus, luctus nec ullamcorper
-                      mattis, pulvinar dapibus leo.
+                      The support and training provided by Mirage Trading are unparalleled. I feel confident and secure trading with
+                      them.
                     </p>
                   </div>
                   <div className="image flex mt-3 gap-3">
@@ -183,10 +175,10 @@ function AppsBanner() {
                     </div>
                     <div className="userDetails pt-3">
                       <h1 className="text-black text-md font-medium text-sm">
-                        Root Stanley
+                        Sara
                       </h1>
                       <h1 className="gradient-text font-medium text-sm">
-                        CEO MACHINEX
+                        Dubai, UAE
                       </h1>
                     </div>
                   </div>

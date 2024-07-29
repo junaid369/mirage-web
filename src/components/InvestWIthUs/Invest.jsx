@@ -19,46 +19,46 @@ const Counter = ({ end, label }) => {
   );
 };
 const StarRating = ({ rating }) => {
-    // Calculate full stars and half stars
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-  
-    // Create an array for star icons
-    const starsArray = [];
-    for (let i = 0; i < fullStars; i++) {
-      starsArray.push(
-        <span key={i} className="text-yellow-400">
-          ★
-        </span>
-      );
-    }
-    if (hasHalfStar) {
-      starsArray.push(
-        <span key="half" className="text-yellow-400">
-          ½
-        </span>
-      );
-    }
-    const remainingStars = 5 - starsArray.length;
-    for (let i = 0; i < remainingStars; i++) {
-      starsArray.push(
-        <span key={`empty-${i}`} className="text-gray-300">
-          ★
-        </span>
-      );
-    }
-  
-    return (
-      <div className="flex items-center">
-        <p className="text-xl font-semibold mr-2">{rating}</p>
-        <div className="flex">
-          {starsArray.map((star, index) => (
-            <span key={index}>{star}</span>
-          ))}
-        </div>
-      </div>
+  // Calculate full stars and half stars
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating % 1 !== 0;
+
+  // Create an array for star icons
+  const starsArray = [];
+  for (let i = 0; i < fullStars; i++) {
+    starsArray.push(
+      <span key={i} className="text-yellow-400">
+        ★
+      </span>
     );
-  };
+  }
+  if (hasHalfStar) {
+    starsArray.push(
+      <span key="half" className="text-yellow-400">
+        ½
+      </span>
+    );
+  }
+  const remainingStars = 5 - starsArray.length;
+  for (let i = 0; i < remainingStars; i++) {
+    starsArray.push(
+      <span key={`empty-${i}`} className="text-gray-300">
+        ★
+      </span>
+    );
+  }
+
+  return (
+    <div className="flex items-center">
+      <p className="text-xl font-semibold mr-2">{rating}</p>
+      <div className="flex">
+        {starsArray.map((star, index) => (
+          <span key={index}>{star}</span>
+        ))}
+      </div>
+    </div>
+  );
+};
 function Invest() {
   const addElement = useIntersectionObserver(
     (element) => {
@@ -94,7 +94,7 @@ function Invest() {
             className="flex justify-center items-center     bg-gradient-to-br from-blue-500   to-red-900  h-28  rounded-2xl transform transition-transform duration-10 hover:scale-105 animationLeft"
             ref={addElement}
           >
-            
+
             <img
               className="h-20 w-20 "
               src="https://multibankfx.com/_next/image?url=%2Flps%2Fstatic%2Finvest-with-us%2Fglobal-shares.png&w=96&q=75"
@@ -164,10 +164,10 @@ function Invest() {
       {/* counter */}
       <div className="bg-white mt-3  py-8 shadow-md max-sm:border-2">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-2  lg:grid-cols-4 gap-4">
-          <Counter end={27} label="Years of Experience" />
-          <Counter end={29000} label="Project Done" />
-          <Counter end={279} label="Expert Team" />
-          <Counter end={539000} label="Happy Client" />
+          <Counter end={4} label="Years of Experience" />
+          <Counter end={1000} label="Happy Clients" />
+          <Counter end={50} label="Expert Team" />
+          <Counter end={20000} label="Successful Trades" />
         </div>
       </div>
     </div>
