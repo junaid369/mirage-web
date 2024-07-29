@@ -42,7 +42,7 @@ function Abouts() {
           <h6 className="max-sm:pl-10  md:pl-10  lg:pl-24  mt-10 gradient-text text-md font-semibold">
             Our Value
           </h6>
-          <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold">
+          <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold py-1">
             Seamless and Secure Trading with Mirage Trading
           </h4>
           <p className="pl-10   lg:pl-24 mt-5 text-gray-500">

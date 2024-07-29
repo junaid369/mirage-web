@@ -92,7 +92,7 @@ function WhoweAre() {
               <h3 className="text-sm font-semibold gradient-text uppercase">
                 Who We Are
               </h3>
-              <h2 className="mt-2 text-3xl font-normal   gradient-text">
+              <h2 className="mt-2 text-3xl font-normal   gradient-text py-1">
                 Leading UAE Trading Platform: Mirage Trading
               </h2>
               <p className="mt-4 text-lg text-gray-600">
