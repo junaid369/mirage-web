@@ -34,8 +34,8 @@ function Banner() {
           }}
         >
           {/* md:pt-72 max-lg:pt-96 */}
-          <div className="md:w-6/6 md:mx-1 lg:mx-0  lg:w-3/6 animationLeft" ref={addElement}>
-            <h1 className="text-center gradient-text   text-3xl  md:text-6xl font-serif">
+          <div className="md:w-6/6 md:mx-1 lg:mx-0  lg:w-3/6 animationLeft  " ref={addElement}>
+            <h1 className="text-center gradient-text   text-3xl  md:text-6xl font-serif py-5">
               Experience the Future of Trading with Mirage Trading
             </h1>
           </div>
