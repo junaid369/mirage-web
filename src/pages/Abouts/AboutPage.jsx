@@ -136,26 +136,20 @@ function Abouts() {
             <div className="content ">
               <h1 className="text-xl px-3 font-serif text-yellow-400">Our Vision</h1>
               <p className="text-md px-3 text-white">
-                We envision YaMarkets as a thriving international financial
-                trading entity, delivering steadfast brokerage services while
-                maximizing benefits for our partners and traders. Our success is
-                built upon our people, our clients, and our employees, along
-                with innovative trading solutions and advanced technology.
+                To be the leading trading platform in the UAE, known for integrity, reliability, and client satisfaction. We envision
+                a future where every trader can achieve consistent profits and financial freedom through our platform.
               </p>
             </div>
           </div>
 
-          <div className="forth item max-sm:hidden lg:hidden">
+          {/* <div className="forth item max-sm:hidden lg:hidden">
             <div className="contents ">
               <p className="text-md px-3  text-white">
-                We envision YaMarkets as a thriving international financial
-                trading entity, delivering steadfast brokerage services while
-                maximizing benefits for our partners and traders. Our success is
-                built upon our people, our clients, and our employees, along
-                with innovative trading solutions and advanced technology.
+                To be the leading trading platform in the UAE, known for integrity, reliability, and client satisfaction. We envision
+                a future where every trader can achieve consistent profits and financial freedom through our platform.
               </p>
             </div>
-          </div>
+          </div> */}
 
           <div className="third item">
             <div className="image zoom-container rounded-2xl  ">
@@ -169,12 +163,10 @@ function Abouts() {
           </div>
           <div className="forth item md:hidden lg:block">
             <div className="contents ">
+              <h1 className="text-xl px-3 font-serif text-yellow-400">Our Values</h1>
+
               <p className="text-md px-3  text-white  py-5">
-                We envision YaMarkets as a thriving international financial
-                trading entity, delivering steadfast brokerage services while
-                maximizing benefits for our partners and traders. Our success is
-                built upon our people, our clients, and our employees, along
-                with innovative trading solutions and advanced technology.
+                Ensuring secure, seamless trading with MetaTrader integration, Mirage Trading provides a trusted, user-friendly platform, cementing our status as the leading choice for traders globally.
               </p>
             </div>
           </div>
@@ -192,11 +184,8 @@ function Abouts() {
             <div className="contents py-5">
               <h1 className="text-xl px-3 font-serif text-yellow-400  pt-3">Our Mission</h1>
               <p className="text-md px-3   text-white  pt-2">
-                We envision YaMarkets as a thriving international financial
-                trading entity, delivering steadfast brokerage services while
-                maximizing benefits for our partners and traders. Our success is
-                built upon our people, our clients, and our employees, along
-                with innovative trading solutions and advanced technology.
+                Our mission is to empower traders by providing a secure, regulated, and profitable trading environment. We aim to
+                guide our clients with strategies that maximize their success and minimize risks.
               </p>
             </div>
           </div>
@@ -269,21 +258,14 @@ function Abouts() {
 
       {/* end */}
       {/* why choose */}
-      <div className="choosemirage md:mx-10  lg:mx-28 max-sm:mx-5 mb-10">
+      {/* <div className="choosemirage md:mx-10  lg:mx-28 max-sm:mx-5 mb-10">
         <h1 className="title text-4xl text-black font-bold">
           Why Choose <span className="gradient-text">Mirage?</span>
         </h1>
         <p className="text-lg text-gray-700  pt-6">
-          Trade with Maleyat for unparalleled transparency and 5-star customer
-          support, backed by 15 years of market expertise and a commitment to
-          protecting your funds. Trade with Maleyat for unparalleled
-          transparency and 5-star customer support, backed by 15 years of market
-          expertise and a commitment to protecting your funds. Trade with
-          Maleyat for unparalleled transparency and 5-star customer support,
-          backed by 15 years of market expertise and a commitment to protecting
-          your funds.
+          Choose Mirage Trading for a superior trading experience characterized by our secure, user-friendly platform and cutting-edge technology. We offer seamless integration with MetaTrader 4 and 5, real-time data, and advanced tools designed to enhance your trading efficiency. With a commitment to regulatory compliance and unparalleled customer support, Mirage Trading ensures that you have everything you need to make informed decisions and achieve your financial goals.
         </p>
-      </div>
+      </div> */}
       {/* end */}
 
       {/* <WhoweAre /> */}

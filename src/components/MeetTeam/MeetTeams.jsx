@@ -140,15 +140,14 @@ function MeetTeams() {
           Anywhere
         </h1>
         <p className="text-center pt-10 text-md md:mx-10 lg:mx-80  text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          Receive exceptional support with Mirage Trading, available 24/7 to assist you. Our dedicated team ensures you have the help you need, anytime and anywhere.
         </p>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 md:gap-6 lg:mx-0">
-                <div className="bg-white animationLeft p-6 rounded-md shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
-                ref={addElement}
+          <div className="bg-white animationLeft p-6 rounded-md shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
+            ref={addElement}
 
-                 >
+          >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-account-cog text-white text-4xl"></i>
             </div>
@@ -162,7 +161,7 @@ function MeetTeams() {
             </div>
           </div>
           <div className="bg-white p-6 animationLeft rounded-md shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
-                ref={addElement}
+            ref={addElement}
 
           >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
@@ -177,10 +176,10 @@ function MeetTeams() {
               </p>
             </div>
           </div>
-                <div className="bg-white p-6 animationRight rounded-md shadow-lg relative   max-sm:mb-8 h-60 hover:scale-105"  
-                ref={addElement}
-                
-                >
+          <div className="bg-white p-6 animationRight rounded-md shadow-lg relative   max-sm:mb-8 h-60 hover:scale-105"
+            ref={addElement}
+
+          >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-headphones text-white text-4xl"></i>
             </div>
@@ -194,8 +193,8 @@ function MeetTeams() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-md animationRight shadow-lg relative  max-sm:mb-8 h-60 hover:scale-105"
-                ref={addElement}
-          
+            ref={addElement}
+
           >
             <div className="bg-gradient-to-br from-blue-500   to-red-900 p-4 rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2">
               <i className="mdi mdi-cog-sync text-white text-4xl"></i>

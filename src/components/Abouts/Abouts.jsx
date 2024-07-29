@@ -39,15 +39,14 @@ function Abouts() {
           className="flex flex-col w-6/6 lg:w-3/6 animationRight"
           ref={addElement}
         >
-          <h6 className="max-sm:pl-10  md:pl-10  lg:pl-24  mt-10 gradient-text text-md font-semibold">
+          {/* <h6 className="max-sm:pl-10  md:pl-10  lg:pl-24  mt-10 gradient-text text-md font-semibold">
             Our Value
-          </h6>
+          </h6> */}
           <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold">
-            Seamless and Secure Trading with Mirage Trading
+            Why Choose Mirage?
           </h4>
           <p className="pl-10   lg:pl-24 mt-5 text-gray-500">
-            Providing a secure, user-friendly trading platform integrated with MetaTrader 4 and 5, Mirage Trading ensures seamless trading experiences and regulatory compliance, making us the trusted choice for traders globally.
-          </p>
+            Mirage Trading stands out with its unparalleled combination of security, advanced technology, and user-centric design. Our platform offers seamless integration with MetaTrader 4 and 5, real-time data, and a comprehensive suite of trading tools, all within a secure and regulated environment. Committed to excellence, Mirage Trading ensures you have the resources and support needed to navigate the markets confidently and achieve your financial goals.</p>
           <div className="flex ml-10 lg:ml-24 mt-8">
             <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
               <i
@@ -56,10 +55,9 @@ function Abouts() {
               ></i>
             </div>
             <div className=" mx-5 lg:mx-3 w-2/3 ">
-              <h2 className=" text-xl lg:text-2xl gradient-text">Our Vision</h2>
+              <h2 className=" text-xl lg:text-2xl gradient-text">Advanced Technology</h2>
               <p className="">
-                To be the leading trading platform in the UAE, known for integrity, reliability, and client satisfaction. We envision
-                a future where every trader can achieve consistent profits and financial freedom through our platform.
+                Benefit from cutting-edge trading tools and real-time data integration with MetaTrader 4 and 5. Enhance your trading strategy with our innovative platform features.
               </p>
             </div>
           </div>
@@ -71,10 +69,9 @@ function Abouts() {
               ></i>
             </div>
             <div className="mx-5 lg:mx-3 w-2/3">
-              <h2 className="text-xl  lg:text-2xl gradient-text">Our Mission</h2>
+              <h2 className="text-xl  lg:text-2xl gradient-text">Dedicated Support</h2>
               <p>
-                Our mission is to empower traders by providing a secure, regulated, and profitable trading environment. We aim to
-                guide our clients with strategies that maximize their success and minimize risks.
+                Experience exceptional customer service with round-the-clock support. Our team is always available to assist you with any queries or issues, ensuring a smooth trading experience.
               </p>
             </div>
           </div>
@@ -93,7 +90,7 @@ function Abouts() {
             Start Trading Today and Unlock Your Financial Potential
           </h1>
           <p className=" text-white mt-3 text-lg mx-10">
-          Begin trading with Mirage Trading today and unlock your path to financial success. Harness advanced tools and real-time insights to achieve your investment goals.
+            Begin trading with Mirage Trading today and unlock your path to financial success. Harness advanced tools and real-time insights to achieve your investment goals.
           </p>
           <button className="mx-10 px-8 mt-4 py-4 bg-gradient-to-br from-blue-500   to-red-900 text-white font-bold rounded-full gradient-border-inner:border-white hover:border-2">
             Start Trading Now!
