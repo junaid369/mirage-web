@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 node_modules/
+package-locak.json
+package-locak.json/
 dist
 dist-ssr
 *.local
