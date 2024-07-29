@@ -7,7 +7,11 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import MeetTeam from "./pages/MeetTeam/MeetTeam";
 import News from "./pages/News/News";
-import TradingPlatform from "./pages/Platform/TradingPlatform";
+import TradingPlatform5 from "./pages/Platform/MT5";
+import TradingPlatform4 from "./pages/Platform/MT4";
+import Forex from "./pages/Forex/Forex";
+import Indices from "./pages/Indices/Indices";
+
 const App = () => {
   return (
     <div className="">
@@ -20,7 +24,10 @@ const App = () => {
           <Route path="/Careers" element={<About />} />
           <Route path="/Team" element={<MeetTeam />} />
           <Route path="/News" element={<News />} />
-          <Route path="/Platform" element={<TradingPlatform />} />
+          <Route path="/MT5" element={<TradingPlatform5 />} />
+          <Route path="/MT4" element={<TradingPlatform4 />} />
+          <Route path="/forex" element={<Forex />} />
+          <Route path="/indices" element={<Indices />} />
         </Routes>
       </Router>
     </div>

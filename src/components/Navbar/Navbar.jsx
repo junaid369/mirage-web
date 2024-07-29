@@ -44,18 +44,18 @@ function Navbar() {
                   >
                     About Us
                   </a>
-                  {/* <a
+                   <a
                     href="/contactUs"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Contact us
                   </a>
-                  <a
+                  {/* <a
                     href="/Careers"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Careers
-                  </a> */}
+                  </a>  */}
                 </div>
               </div>
               <div className="group relative">
@@ -66,8 +66,15 @@ function Navbar() {
                   Platform
                 </a>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
+            
                   <a
-                    href="/Platform"
+                    href="/MT4"
+                    className="block py-2 px-4  text-red-900 hover:text-black"
+                  >
+                    Meta Trader 4
+                  </a>
+                  <a
+                    href="/MT5"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Meta Trader 5
@@ -75,7 +82,7 @@ function Navbar() {
                 </div>
               </div>
 
-              {/* <div className="group relative">
+              <div className="group relative">
                 <a
                   href="#"
                   className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
@@ -84,25 +91,25 @@ function Navbar() {
                 </a>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
-                    href="#"
+                    href="/forex"
                     className="block py-2 px-4 text-red-900 hover:text-black"
                   >
                     Forex
                   </a>
                   <a
-                    href="#"
+                    href="/indices"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Indices
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
                     Shares
-                  </a>
+                  </a> */}
                 </div>
-              </div> */}
+              </div>
               {/* <div className="group relative">
                 <a
                   href="#"
@@ -125,28 +132,7 @@ function Navbar() {
                   </a>
                 </div>
               </div> */}
-                <div className="group relative">
-                <a
-                  href="/contactus"
-                  className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
-                >
-                  ContactUs
-                </a>
-                {/* <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
-                  <a
-                    href="/Team"
-                    className="block py-2 px-4 text-red-900 hover:text-black"
-                  >
-                    Meet Team
-                  </a>
-                  <a
-                    href="/News"
-                    className="block py-2 px-4 text-red-900 hover:text-black"
-                  >
-                    News
-                  </a>
-                </div> */}
-              </div>
+              
               <div className="group relative">
                 <a
                   href="/Team"
@@ -174,7 +160,7 @@ function Navbar() {
                   href="/News"
                   className="py-4 px-2 gradient-nav   font-serif hover:text-red-600 transition duration-300"
                 >
-                  News and Blogs
+                  News
                 </a>
                 {/* <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
                   <a
