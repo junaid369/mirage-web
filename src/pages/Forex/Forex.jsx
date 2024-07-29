@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 
-
 function Forex() {
   return (
     <div className="mt-24">
@@ -44,8 +43,40 @@ function Forex() {
         </div>
       </section>
 
+      {/* how work */}
+      <section className="workingmodel mb-20">
+        <div className="md:flex ">
+          <div className="md:w-3/6  flex justify-end items-center ">
+            <div className="image">
+              <img
+                src="https://www.icmarkets.com/assets/images/single_market_page/forexImg.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="md:w-3/6 lg:mx-10 flex flex-col  justify-center items-start ">
+            <div className="contents">
+              <h1 className="text-3xl font-serif py-3">
+                How does Forex Trading work?
+              </h1>
+              <p className="text-sm md:max-w-xl">
+                Forex trading is similar to trading shares or futures except
+                that when trading foreign exchange you are buying or selling one
+                currency against another and you do not take delivery of the
+                underlying currency. One of the key advantages Forex has over
+                other financial instruments is that relatively small lot sizes
+                can be traded - lot sizes can be as small as 1000 units (one
+                micro lot). Typically, foreign exchange also involves leverage
+                which in some cases can be as high as 1:1000, which is very
+                different to trading shares where no leverage is involved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* why trade */}
-      <section className="whytrade max-sm:mx-5 lg:mx-32">
+      <section className="whytrade max-sm:mx-5 lg:mx-32 mb-10">
         <div className="title flex-col justify-center ">
           <h1 className="text-center text-4xl font-serif py-3">
             Why trade forex market with{" "}
@@ -112,8 +143,7 @@ function Forex() {
           </div>
         </div>
       </section>
-      <Footer/>
-
+      <Footer />
     </div>
   );
 }
