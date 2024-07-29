@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../Footer/Footer";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function MetaTrader() {
   const items = [
@@ -56,10 +59,82 @@ function MetaTrader() {
         "MT5 simplifies the trading process with its one-click trading feature, enabling quick and efficient trade execution.",
     },
   ];
+  const itemsForList = [
+    {
+      // image: "public/graph1.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph1.jpeg",
+      title: "Expert Advisor trading",
+      description:
+        "Automate your trading by creating or downloading an Expert Advisor programme.",
+    },
+    {
+      // image: "public/graph2.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph2.jpeg",
+
+      title: "3 fully customisable charts",
+      description:
+        "Quickly switch between different saved custom chart templates.",
+    },
+    {
+      // image: "public/graph3.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph3.jpeg",
+
+      title: "21 timeframes",
+      description:
+        "Choose from 21 different timeframes, starting from 1 minute to 1 month.",
+    },
+    {
+      // image: "public/graph4.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph4.jpeg",
+
+      title: "38 technical indicators",
+      description:
+        "Identify trends and patterns through a wide selection of 38 different indicators.",
+    },
+    {
+      // image: "public/graph5.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph5.jpeg",
+
+      title: "6 pending orders types",
+      description:
+        "Open trades instantly or in the future with 6 order types to choose from..",
+    },
+
+    {
+      // image: "public/graph6.jpeg",
+      image: "https://mirage-web-six.vercel.app/graph6.jpeg",
+
+      title: "Built-in economic calendar",
+      description:
+        "Discover all the major market events and data releases that can potentially shift markets..",
+    },
+  ];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    swipe: true,
+  };
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex(currentIndex > 0 ? currentIndex - 2 : 0);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex(
+      currentIndex < itemsForList.length - 2 ? currentIndex + 2 : currentIndex
+    );
+  };
+
   return (
     <div class="mt-24">
       {/* banner */}
-      <section class="banner bg-slate-800 mb-20">
+      <section class="banner bg-slate-800 mb-10">
         <div class="lg:flex items-center justify-center lg:mx-10 pt-16 lg:pt-0 md:h-md-800 lg:h-[500px]">
           <div class="max-sm:w-6/6 md:w-6/6 lg:w-3/6 max-sm:mx-5 md:mx-5 lg:mx-0">
             <h1 class="max-sm:text-3xl text-5xl text-white lg:ml-20 font-serif">
@@ -77,6 +152,49 @@ function MetaTrader() {
               src="https://www.forex.com/en/-/media/project/gain-capital/forex/heroes/platforms/metatrader/fxca_mt5_header-mobile.png?h=469&amp;iar=0&amp;w=616&amp;extension=webp&amp;hash=6"
               alt=""
             />
+          </div>
+        </div>
+      </section>
+
+      {/* what is metatrader */}
+      <section className="details bg-slate-100 mb-10">
+        <div className="md:flex   md:mx-3  lg:mx-10 md:gap-1 lg:gap-3">
+          <div className="md:w-3/6 p-8 flex justify-center items-center">
+            <div className="image ">
+              <img
+                src="https://hmarkets.com/wp-media/2022/07/mt4_mobile.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div className="md:w-3/6 p-8 flex flex-col justify-center ">
+            <div className="contents ">
+              <div className="title">
+                <h1 className="text-3xl  lg:text-6xl font-serif">
+                  What is MetaTrader 5?
+                </h1>
+              </div>
+              <div className="description mt-5 lg:mt-12">
+                <p className="max-sm:text-sm  text-md text-justify">
+                  MetaTrader 5, commonly known as MT5, is the latest and most
+                  powerful online trading platform developed for retail
+                  financial traders.
+                </p>
+                <p className="max-sm:text-sm  text-md text-justify pt-3">
+                  This platform retains the interface you may already be
+                  familiar with, in MT4, but boasts superior market depth,
+                  technical tools, customisations and much more.
+                </p>
+                <p className="max-sm:text-sm  text-md text-justify pt-3">
+                  Making MT5 not only an easy to use platform for beginners, but
+                  the perfect platform for traders looking to better their
+                  trading skills. It is also a great platform for multi-asset
+                  and experienced traders looking to widen their portfolios and
+                  achieve more accurate technical analysis.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -170,80 +288,6 @@ function MetaTrader() {
           </div>
         </div>
       </section>
-      {/* features */}
-      {/* <div class="bg-slate-100 max-sm:p-8 md:p-10 lg:p-24">
-        <h1 class="max-sm:text-xl text-3xl font-bold mb-8 text-center">
-          What makes MT5 the superior Trading Platform
-        </h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">Advanced Charting</h2>
-              <p>
-                MT5 offers advanced charting capabilities, allowing traders to
-                analyze price movements with various technical indicators,
-                graphical objects, and timeframes.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">Flexible Order Types</h2>
-              <p>
-                MT5 offers a wide range of order types, including market orders,
-                pending orders, stop orders, and trailing stops, allowing
-                traders to execute trades according to their preferred
-                strategies.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">Multiple Asset Classes</h2>
-              <p>
-                Trade almost 2000 instruments, including forex, stocks,
-                commodities, indices, and cryptocurrencies, providing
-                diversification opportunities for traders.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">Economic Calendar</h2>
-              <p>
-                The integrated economic calendar in MT5 provides real-time
-                updates on important economic events, helping traders stay
-                informed about market-moving news and make timely trading
-                decisions.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">Algorithmic Trading</h2>
-              <p>
-                MT5 enables traders to automate their trading strategies using
-                the built-in MQL5 development environment.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="text-green-600 text-2xl">O</div>
-            <div>
-              <h2 class="text-xl font-bold">One-Click Trading</h2>
-              <p>
-                MT5 simplifies the trading process with its one-click trading
-                feature, enabling quick and efficient trade execution.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <div className="bg-slate-100 max-sm:p-8 md:p-10 lg:p-24">
         <h1 className="text-3xl font-bold mb-8 text-center">
@@ -261,12 +305,41 @@ function MetaTrader() {
           ))}
         </div>
       </div>
-      {/* why trade */}
+      {/* devices */}
       <section class="mt-10 mb-10">
+        <div class="bg-gradient-to-br from-sky-900 to-red-500 max-sm:h-[600px] h-[500px] max-sm:rounded-bl-8xl md:rounded-bl-10xl lg:rounded-bl-12xl lg:flex md:flex items-center">
+          <div class="lg:w-3/6 md:w-3/6 md:flex-col lg:flex-col items-center max-sm:mx-5 max-sm:pt-28 md:mx-5 lg:mx-10">
+            <div class="title">
+              <h1 class="max-sm:text-4xl md:text-4xl lg:text-5xl font-serif font-normal text-white">
+                <span class="text-red-500">Trade</span> on all devices
+              </h1>
+            </div>
+            <div class="details max-sm:mt-3 mt-5">
+              <h1 class="text-md text-white lg:max-w-lg">
+                Embrace the ease and versatility of trading with MT5 on any
+                device. Be it Web, Desktop, Android, or iOS, MT5 integrates
+                flawlessly, promising a smooth trading journey no matter where
+                you are.
+              </h1>
+            </div>
+          </div>
+          <div class="max-sm:flex justify-center md:w-3/6 md:mx-2 lg:mx-0 lg:w-3/6">
+            <div class="image">
+              <img
+                class="max-sm:h-64"
+                src="https://d1hnl85qs9kdbt.cloudfront.net/wp-content/uploads/2023/08/11205820/Image.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* why trade */}
+      <section class="mt-10 mb-10 ">
         <h1 class="h-16 text-black max-sm:text-3xl md:text-3xl lg:text-5xl text-center font-bold">
           Why trade with <span class="gradient-text">Mirage</span> MT5
         </h1>
-        <div class="max-sm:mx-5 md:mx-5 lg:mx-28 lg:flex md:flex max-sm:mt-20 md:mt-5 lg:mt-10">
+        <div class="max-sm:mx-5 md:mx-5 lg:mx-28 lg:flex md:flex max-sm:mt-5 md:mt-5 lg:mt-10 ">
           <div class="lg:w-2/6 md:w-2/6 md:pt-10 lg:pt-28">
             <div class="contents flex-col">
               <div class="firstcontents">
@@ -336,9 +409,40 @@ function MetaTrader() {
           </div>
         </div>
       </section>
+      {/* features */}
 
-      <section className="additional bg-slate-100 ">
-        <h1 className="text-center text-4xl pt-7 font-medium gradient-text">Additional perks</h1>
+      <div className="bg-slate-100  mt-20 max-sm:p-8 md:p-8  lg:p-5 flex flex-col  md:gap-5 lg:gap-1 lg:flex-row md:flex-row  mb-10 ">
+        <div className="md:w-2/6  lg:w-3/6   flex flex-col justify-center lg:items-center">
+          <h1 className="text-3xl font-bold mb-4">MT5 Features</h1>
+          <p className="text-md lg:text-lg lg:text-center lg:max-w-lg">
+            Gain access to fast processing speeds and customisable trading
+            tools.
+            Gain access to fast processing speeds and customisable trading
+            tools.
+            Gain access to fast processing speeds and customisable trading
+            tools.
+          </p>
+        </div>
+
+        <div className="max-sm:w-6/6  md:w-4/6 lg:w-3/6 flex  overflow-x-auto gap-2 md:gap-3 lg:gap-5 overflow-hidden max-sm:h-[330px] md:h-[350px]    lg:h-[420px] max-sm:mt-5  ">
+          {itemsForList.map((item, index) => (
+            <div className="each item max-sm:min-w-64  md:min-w-64 lg:min-w-80 flex flex-col  shadow-lg   border-2 bg-white rounded-3xl md:h-80   lg:h-96 ">
+              <div className="p-5">
+                <img src={item.image} alt={item.title} className="" />
+              </div>
+              <div className="p-5">
+                <h2 className="text-md lg:text-lg font-bold ">{item.title}</h2>
+                <p className="text-sm mt-2 ">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="additional bg-white">
+        <h1 className="text-center text-4xl pt-7 font-medium gradient-text">
+          Additional perks
+        </h1>
         <div className="lg:mx-20 grid grid-cols-1 lg:grid-cols-3 gap-10 p-10 lg:p-20">
           {items.map((item, index) => (
             <div
@@ -358,35 +462,58 @@ function MetaTrader() {
           ))}
         </div>
       </section>
-      {/* devices */}
-      <section class="mt-10 mb-10">
-        <div class="bg-gradient-to-br from-sky-900 to-red-500 max-sm:h-[600px] h-[500px] max-sm:rounded-bl-8xl md:rounded-bl-10xl lg:rounded-bl-12xl lg:flex md:flex items-center">
-          <div class="lg:w-3/6 md:w-3/6 md:flex-col lg:flex-col items-center max-sm:mx-5 max-sm:pt-28 md:mx-5 lg:mx-10">
-            <div class="title">
-              <h1 class="max-sm:text-4xl md:text-4xl lg:text-5xl font-serif font-normal text-white">
-                <span class="text-red-500">Trade</span> on all devices
-              </h1>
-            </div>
-            <div class="details max-sm:mt-3 mt-5">
-              <h1 class="text-md text-white lg:max-w-lg">
-                Embrace the ease and versatility of trading with MT5 on any
-                device. Be it Web, Desktop, Android, or iOS, MT5 integrates
-                flawlessly, promising a smooth trading journey no matter where
-                you are.
-              </h1>
-            </div>
+
+      {/* <div className="bg-slate-100 p-8 flex flex-col lg:flex-row md:flex-row mb-10 max-sm:mx-2 md:mx-10">
+        <div className="w-full lg:w-1/2 p-8 flex flex-col justify-center">
+          <h1 className="text-3xl font-bold mb-4">MT5 Features</h1>
+          <p className="text-lg">
+            Gain access to fast processing speeds and customisable trading
+            tools.
+          </p>
+        </div>
+
+        <div className="md:w-3/6 flex flex-col items-center">
+          <div className="flex overflow-hidden h-[420px] gap-5">
+            {itemsForList
+              .slice(currentIndex, currentIndex + 2)
+              .map((item, index) => (
+                <div
+                  key={index}
+                  className="min-w-[45%] flex flex-col shadow-lg border-2 bg-white rounded-3xl h-96"
+                >
+                  <div className="p-5">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                  <div className="p-5">
+                    <h2 className="text-lg font-bold">{item.title}</h2>
+                    <p className="text-sm mt-2">{item.description}</p>
+                  </div>
+                </div>
+              ))}
           </div>
-          <div class="max-sm:flex justify-center md:w-3/6 md:mx-2 lg:mx-0 lg:w-3/6">
-            <div class="image">
-              <img
-                class="max-sm:h-64"
-                src="https://d1hnl85qs9kdbt.cloudfront.net/wp-content/uploads/2023/08/11205820/Image.png"
-                alt=""
-              />
-            </div>
+
+          <div className="flex justify-between w-full mt-4">
+            <button
+              onClick={handlePrev}
+              className="bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors"
+              disabled={currentIndex === 0}
+            >
+              &lt;
+            </button>
+            <button
+              onClick={handleNext}
+              className="bg-gray-300 p-2 rounded-full hover:bg-gray-400 transition-colors"
+              disabled={currentIndex >= itemsForList.length - 2}
+            >
+              &gt;
+            </button>
           </div>
         </div>
-      </section>
+      </div> */}
 
       <Footer />
     </div>

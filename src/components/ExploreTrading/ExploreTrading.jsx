@@ -82,7 +82,7 @@ function ExploreTrading() {
           <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 md:gap-5 lg:gap-8 max-sm:mx-5 ">
             <div className=" shadow-md  flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5 my-5 item-list   bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp  "
+                className="mx-5 my-5 item-list   bg-slate-100 h-80 w-96 border-1 border-gray-400   scaleUp  "
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
@@ -115,7 +115,7 @@ function ExploreTrading() {
             </div>
             <div className=" shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
               <div
-                className=" mx-5 my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp"
+                className=" mx-5 my-5 item-list bg-slate-100 h-80 w-96 border-1 border-gray-400   scaleUp"
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
@@ -148,7 +148,7 @@ function ExploreTrading() {
             </div>
             <div className=" shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5  my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp"
+                className="mx-5  my-5 item-list bg-slate-100 h-80 w-96 border-1 border-gray-400   scaleUp"
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
@@ -181,7 +181,7 @@ function ExploreTrading() {
             </div>
             <div className="  shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5 my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp"
+                className="mx-5 my-5 item-list bg-slate-100 h-80 w-96 border-1 border-gray-400   scaleUp"
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
@@ -214,7 +214,7 @@ function ExploreTrading() {
             </div>
             <div className=" shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5 my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400  scaleUp"
+                className="mx-5 my-5 item-list bg-slate-100 h-80 w-96 border-1 border-gray-400  scaleUp"
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
@@ -247,7 +247,7 @@ function ExploreTrading() {
             </div>
             <div className="  shadow-md shadow-slate-300 flex justify-center items-center max-sm:mb-12">
               <div
-                className="mx-5 my-5 item-list bg-gray-200 h-80 w-96 border-1 border-gray-400   scaleUp"
+                className="mx-5 my-5 item-list bg-slate-100 h-80 w-96 border-1 border-gray-400   scaleUp"
                 ref={addElement}
               >
                 <div className=" mx-5 flex justify-start mt-5 ">
