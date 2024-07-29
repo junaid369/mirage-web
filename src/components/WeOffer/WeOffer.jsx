@@ -47,11 +47,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                In-Depth Market Analysis{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Leverage in-depth market insights to make informed trading decisions.
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif ">
@@ -69,11 +68,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                Advanced Trading Tools{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Utilize state-of-the-art tools for precision trading and portfolio management.
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
@@ -91,11 +89,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                Real-Time Data Access{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Stay updated with real-time market data for timely decision-making.
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
@@ -113,11 +110,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                Risk Management Strategies{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Implement effective risk management techniques to protect your investments.
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
@@ -135,11 +131,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                Educational Resources{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Access a wealth of educational materials to enhance your trading skills
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
@@ -157,11 +152,10 @@ function WeOffer() {
                 alt=""
               />
               <h1 className="text-2xl mx-9 mt-3 font-medium">
-                Tailored Strategies{" "}
+                24/7 Support{" "}
               </h1>
               <p className="mt-3 mx-9 text-gray-400">
-                Efficitur nec lorem tempus eget felis etiam neque quis sodales
-                sollicitudin
+                Benefit from round-the-clock support to assist you whenever needed.
               </p>
               <div className="flex items-center">
                 <button className="btn-hover-gradient mt-3  mx-9 w-28 h-8 text-white font-serif  ">
@@ -196,8 +190,7 @@ function WeOffer() {
               className="text-lg md:text-sm mb-8 animationRight "
               ref={addElement}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Begin your trading journey with Mirage Trading and unlock limitless financial opportunities today.
             </p>
           </div>
         </div>

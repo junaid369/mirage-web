@@ -72,10 +72,9 @@ function ExploreTrading() {
             Explore Our Trading Solutions
           </h1>
           <p className="text-center text-gray-500 mt-5 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec
+            Discover cutting-edge tools and resources designed to elevate your trading experience.
             <br />
-            ullamcorper mattis, pulvinar dapibus leo.
+            Join Mirage Trading and unlock your financial potential with our innovative platform.
           </p>
         </div>
         <div className="products flex justify-center mt-8 ">
@@ -99,9 +98,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Trade forex with confidence on Mirage Trading's secure platform. Access real-time data and advanced tools for optimal currency trading.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
@@ -132,9 +129,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Dive into the dynamic world of cryptocurrency with Mirage Trading. Harness advanced tools and real-time data to maximize your digital asset investments.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
@@ -165,9 +160,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Trade equities with ease using Mirage Trading’s robust platform. Access real-time insights and advanced tools to make informed stock market decisions.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
@@ -198,9 +191,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Trade stocks effortlessly with Mirage Trading’s advanced platform. Access real-time market data and robust tools to make informed investment decisions.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
@@ -231,9 +222,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Trade ETFs effortlessly with Mirage Trading’s cutting-edge platform. Access real-time data and powerful tools to optimize your investment strategy.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
@@ -264,9 +253,7 @@ function ExploreTrading() {
                 </div>
                 <div className="content mt-3">
                   <p className="text-center text-black">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                    leo.
+                    Trade commodities with precision on Mirage Trading’s advanced platform. Access up-to-date market data and tools to enhance your trading strategy.
                   </p>
 
                   <div className="mx-3 mt-3  gap-2">
