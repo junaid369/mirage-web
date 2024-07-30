@@ -45,8 +45,8 @@ function Forex() {
 
       {/* how work */}
       <section className="workingmodel mb-20">
-        <div className="md:flex ">
-          <div className="md:w-3/6  flex justify-end items-center ">
+        <div className="max-sm:mx-5  md:flex ">
+          <div className="md:w-3/6  flex  max-sm:justify-center   md:justify-end items-center ">
             <div className="image">
               <img
                 src="https://www.icmarkets.com/assets/images/single_market_page/forexImg.webp"
@@ -54,7 +54,7 @@ function Forex() {
               />
             </div>
           </div>
-          <div className="md:w-3/6 lg:mx-10 flex flex-col  justify-center items-start ">
+          <div className="md:w-3/6 lg:mx-10  max-sm:mx-5 flex flex-col  justify-center items-start ">
             <div className="contents">
               <h1 className="text-3xl font-serif py-3">
                 How does Forex Trading work?

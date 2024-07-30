@@ -13,8 +13,7 @@ function Footer() {
             <div className="px-3">
               <p className="font-bold">Head Office</p>
               <p>Rawdat Al Wasel, Near Business Bay Metro Station, </p>
-              <p>Suite No 110, Sheikh Zayed Collector Rd,
-                Dubai, UAE</p>
+              <p>Suite No 110, Sheikh Zayed Collector Rd, Dubai, UAE</p>
             </div>
           </div>
           <div className="flex items-center mb-4 max-sm:mx-5">
@@ -46,13 +45,15 @@ function Footer() {
               <div className="title md:flex-col items-center justify-center">
                 <div className="max-sm:flex md:flex lg:flex-col justify-center">
                   <img
-                    className="h-20 w-36 object-cover lg:bg-white"
+                    className="h-20 w-52 object-cover "
                     src="https://true-blue-movers.s3.amazonaws.com/Mirage.png"
                     alt=""
                   />
                 </div>
                 <p className="text-white py-5 max-sm:text-center md:text-center lg:text-left   max-sm:p-5">
-                  Your trusted platform for secure and seamless trading. Join Mirage Trading and experience excellence with MetaTrader integration.
+                  Your trusted platform for secure and seamless trading. Join
+                  Mirage Trading and experience excellence with MetaTrader
+                  integration.
                 </p>
                 <div className="search flex items-center ">
                   <div className=" flex justify-center items-center max-sm:mx-5 md:mx-5 lg:mx-0">
@@ -65,61 +66,120 @@ function Footer() {
                       <span class="mdi mdi-magnify text-4xl"></span>
                     </div>
                   </div>
-
                 </div>
                 {/* for medium screens */}
                 <div className="lg:hidden max-sm:hidden flex  gap-5 mt-5 mx-5">
                   <div className="w-3/6  flex flex-col justify-center items-start">
                     <h1 className=" text-lg mb-3">Product</h1>
-                    <h6 className=" text-sm mb-1 text-gray-200">Stocks</h6>
-                    <h6 className=" text-sm mb-1 text-gray-200">Ipo</h6>
-                    <h6 className=" text-sm mb-1 text-gray-200">
-                      Mutal Funds
-                    </h6>
-                    <h6 className=" text-sm mb-2 text-gray-200">Credits</h6>
+                    <a href="/MT4">
+                      <h6 className=" text-sm mb-1 text-gray-200">
+                        Meta Trader 4
+                      </h6>
+                    </a>
+                    <a href="?MT5">
+                      <h6 className=" text-sm mb-1 text-gray-200">
+                        Meta Trader 5
+                      </h6>
+                    </a>
+                    <a href="/forex">
+                      <h6 className=" text-sm mb-1 text-gray-200">Forex</h6>
+                    </a>
+                    <a href="/Indices">
+                      <h6 className=" text-sm mb-1 text-gray-200">Indices </h6>
+                    </a>
                   </div>
                   <div className="w-3/6 flex flex-col justify-center items-start">
                     <h1 className=" text-lg mb-3">Company</h1>
-                    <h6 className=" text-sm mb-1 text-gray-200">Abouts</h6>
-                    <h6 className=" text-sm mb-1 text-gray-200">Services</h6>
-                    <h6 className=" text-sm mb-1 text-gray-200">Vision</h6>
-                    <h6 className=" text-sm mb-1 text-gray-200">Credits</h6>
+                    <a href="/aboutUs">
+                      <h6 className=" text-sm mb-1 text-gray-200">Abouts Us</h6>
+                    </a>
+                    <a href="/Team">
+                      <h6 className=" text-sm mb-1 text-gray-200">Meet Team</h6>
+                    </a>
+                    <a href="/News">
+                      <h6 className=" text-sm mb-1 text-gray-200">
+                        News & Blogs
+                      </h6>
+                    </a>
+                    <a href="">
+                      <h6 className=" text-sm mb-1 text-gray-200">Careers</h6>
+                    </a>
+                    <a href="/contactUs">
+                      <h6 className=" text-sm mb-1 text-gray-200">
+                        Contact Us
+                      </h6>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <div className="max-sm:hidden  md:hidden lg:block flex-col  items-center w-1/6">
               <h1 className=" text-xl mb-3">Products</h1>
-              <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 4</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 5</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Forex</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Indices </h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Shares</h6>
+
+              <a href="/MT4">
+                <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 4</h6>
+              </a>
+              <a href="?MT5">
+                <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 5</h6>
+              </a>
+              <a href="/forex">
+                <h6 className=" text-sm mb-1 text-gray-200">Forex</h6>
+              </a>
+              <a href="/Indices">
+                <h6 className=" text-sm mb-1 text-gray-200">Indices </h6>
+              </a>
             </div>
             <div className="max-sm:hidden   md:hidden lg:block flex-col  items-center w-1/6">
               <h1 className=" text-xl mb-3">Company</h1>
-              <h6 className=" text-sm mb-1 text-gray-200">Abouts Us</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Meet Team</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">News & Blogs</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Careers</h6>
-              <h6 className=" text-sm mb-1 text-gray-200">Contact Us</h6>
+              <a href="/aboutUs">
+                <h6 className=" text-sm mb-1 text-gray-200">Abouts Us</h6>
+              </a>
+              <a href="/Team">
+                <h6 className=" text-sm mb-1 text-gray-200">Meet Team</h6>
+              </a>
+              <a href="/News">
+                <h6 className=" text-sm mb-1 text-gray-200">News & Blogs</h6>
+              </a>
+              <a href="">
+                <h6 className=" text-sm mb-1 text-gray-200">Careers</h6>
+              </a>
+              <a href="/contactUs">
+                <h6 className=" text-sm mb-1 text-gray-200">Contact Us</h6>
+              </a>
             </div>
             <div className="md:hidden flex items-center justify-center gap-3 mx-5 mt-5">
               <div className="w-3/6  flex flex-col justify-center items-start">
                 <h1 className=" text-lg mb-3">Products</h1>
-                <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 4</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 5</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Forex</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Indices </h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Shares</h6>
+                <a href="/MT4">
+                  <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 4</h6>
+                </a>
+                <a href="?MT5">
+                  <h6 className=" text-sm mb-1 text-gray-200">Meta Trader 5</h6>
+                </a>
+                <a href="/forex">
+                  <h6 className=" text-sm mb-1 text-gray-200">Forex</h6>
+                </a>
+                <a href="/Indices">
+                  <h6 className=" text-sm mb-1 text-gray-200">Indices </h6>
+                </a>
               </div>
               <div className="w-3/6 flex flex-col justify-center items-start">
                 <h1 className=" text-lg mb-3">Company</h1>
-                <h6 className=" text-sm mb-1 text-gray-200">Abouts Us</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Meet Team</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">News & Blogs</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Careers</h6>
-                <h6 className=" text-sm mb-1 text-gray-200">Contact Us</h6>
+                <a href="/aboutUs">
+                  <h6 className=" text-sm mb-1 text-gray-200">Abouts Us</h6>
+                </a>
+                <a href="/Team">
+                  <h6 className=" text-sm mb-1 text-gray-200">Meet Team</h6>
+                </a>
+                <a href="/News">
+                  <h6 className=" text-sm mb-1 text-gray-200">News & Blogs</h6>
+                </a>
+                <a href="">
+                  <h6 className=" text-sm mb-1 text-gray-200">Careers</h6>
+                </a>
+                <a href="/contactUs">
+                  <h6 className=" text-sm mb-1 text-gray-200">Contact Us</h6>
+                </a>
               </div>
             </div>
             <div className="max-sm:w-6/6 max-sm:mx-5  md:w-3/6 lg:w-1/3 mb-6 lg:mb-0 max-sm:mt-5">

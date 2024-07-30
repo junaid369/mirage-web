@@ -41,7 +41,7 @@ function News() {
         "https://finnhub.io/api/v1/stock/symbol?exchange=US&token=cqb5dn9r01qmfd85t0ogcqb5dn9r01qmfd85t0p0"
       );
 
-      const topStocks = response.data.slice(0, 100).map((stock) => ({
+      const topStocks = response.data.slice(0, 100000).map((stock) => ({
         ...stock,
         price: (Math.random() * 100).toFixed(2), // Mock price, replace with real data
         change: Math.random() > 0.5 ? 1 : -1, // Mock change, replace with real data
@@ -91,15 +91,15 @@ function News() {
       {/* top stocks */}
       <section className=" p-8 overflow-hidden">
         {/* <h1 className="text-2xl font-bold mb-6">Top Stocks</h1> */}
-        <div className="relative w-full">
+        <div className="relative w-full mx-2">
           {stocks.length > 0 ? (
             <h1 className="text-black text-3xl font-medium">Top Stocks</h1>
           ) : null}
-          <div className="flex animate-marquee whitespace-nowrap mt-10">
+          <div className="flex animate-marquee whitespace-nowrap  mt-10">
             {stocks.map((stock) => (
               <div
                 key={stock.symbol}
-                className="bg-white m-2 p-4 rounded-lg shadow-md flex-shrink-0 w-64 bg-gradient-to-br from-blue-400   to-red-500 "
+                className="bg-white  m-2 p-4 rounded-lg shadow-md flex-shrink-0 w-64 bg-gradient-to-br from-blue-400   to-red-500 "
               >
                 <h2 className="text-md font-serif text-white mb-2">
                   {stock.symbol}
@@ -125,6 +125,8 @@ function News() {
               </div>
             ))}
           </div>
+
+      
         </div>
       </section>
       {/* end */}
