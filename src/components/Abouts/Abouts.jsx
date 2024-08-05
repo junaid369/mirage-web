@@ -42,10 +42,10 @@ function Abouts() {
           {/* <h6 className="max-sm:pl-10  md:pl-10  lg:pl-24  mt-10 gradient-text text-md font-semibold">
             Our Value
           </h6> */}
-          <h4 className="gradient-text pl-10 md:pl-10 lg:pl-24 mt-3  text-xl md:text-4xl font-semibold">
+          <h4 className="gradient-text  md:pl-10 lg:pl-24 mt-3  text-2xl md:text-4xl font-semibold max-sm:text-center md:h-12">
             Why Choose Mirage?
           </h4>
-          <p className="pl-10   lg:pl-24 mt-5 text-gray-500">
+          <p className="max-sm:mx-5  md:pl-10   lg:pl-24 mt-5 text-gray-500">
             Mirage Trading stands out with its unparalleled combination of security, advanced technology, and user-centric design. Our platform offers seamless integration with MetaTrader 4 and 5, real-time data, and a comprehensive suite of trading tools, all within a secure and regulated environment. Committed to excellence, Mirage Trading ensures you have the resources and support needed to navigate the markets confidently and achieve your financial goals.</p>
           <div className="flex ml-10 lg:ml-24 mt-8">
             <div className=" w-1/6 btn-hover-gradient rounded-full max-sm:w-12  max-sm:h-12  md:w-12 md:h-12 lg:w-16 lg:h-16  flex items-center justify-center">
@@ -54,9 +54,9 @@ function Abouts() {
                 className="mdi mdi-rocket-launch text-white text-2xl lg:text-4xl"
               ></i>
             </div>
-            <div className=" mx-5 lg:mx-3 w-2/3 ">
+            <div className="mx-5 lg:mx-3 w-2/3 ">
               <h2 className=" text-xl lg:text-2xl gradient-text">Advanced Technology</h2>
-              <p className="">
+              <p className="text-gray-400">
                 Benefit from cutting-edge trading tools and real-time data integration with MetaTrader 4 and 5. Enhance your trading strategy with our innovative platform features.
               </p>
             </div>
@@ -70,7 +70,7 @@ function Abouts() {
             </div>
             <div className="mx-5 lg:mx-3 w-2/3">
               <h2 className="text-xl  lg:text-2xl gradient-text">Dedicated Support</h2>
-              <p>
+              <p className="text-gray-400">
                 Experience exceptional customer service with round-the-clock support. Our team is always available to assist you with any queries or issues, ensuring a smooth trading experience.
               </p>
             </div>

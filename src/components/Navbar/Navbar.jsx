@@ -7,7 +7,14 @@ function Navbar() {
   const [activeMenu, setActiveMenu] = useState(null);
 
   const handleMenuClick = (menu) => {
-    setActiveMenu(activeMenu === menu ? null : menu);
+
+    if (menu === "MeetTeam" || menu === "News") {
+      // Directly navigate to page without toggling dropdown
+      window.location.href = `/${menu === "MeetTeam" ? "Team" : "News"}`;
+    } else {
+      setActiveMenu(activeMenu === menu ? null : menu);
+    }
+    // setActiveMenu(activeMenu === menu ? null : menu);
   };
   return (
     <div>
@@ -44,7 +51,7 @@ function Navbar() {
                   >
                     About Us
                   </a>
-                   <a
+                  <a
                     href="/contactUs"
                     className="block py-2 px-4  text-red-900 hover:text-black"
                   >
@@ -66,7 +73,6 @@ function Navbar() {
                   Platform
                 </a>
                 <div className="absolute hidden group-hover:block bg-white shadow-lg mt-1 rounded w-48">
-            
                   <a
                     href="/MT4"
                     className="block py-2 px-4  text-red-900 hover:text-black"
@@ -132,7 +138,7 @@ function Navbar() {
                   </a>
                 </div>
               </div> */}
-              
+
               <div className="group relative">
                 <a
                   href="/Team"
@@ -177,7 +183,7 @@ function Navbar() {
                   </a>
                 </div> */}
               </div>
-            
+
               {/* <div className="group relative">
                 <a
                   href="#"
@@ -197,7 +203,10 @@ function Navbar() {
               </div> */}
             </div>
             <button className="hidden md:flex items-center space-x-3 btn-hover-gradient rounded-lg hover: transition duration-300">
-              <a href="/contactUs" className="py-2 px-5 text-md    text-white   ">
+              <a
+                href="/contactUs"
+                className="py-2 px-5 text-md    text-white   "
+              >
                 START INVESTING
               </a>
             </button>
@@ -223,154 +232,104 @@ function Navbar() {
               </svg>
             </button>
 
-            {/* Mobile Menu */}
-            {/* <div
-        className={`md:hidden fixed inset-0 bg-white shadow-lg  overflow-auto overflow-y-auto transition-transform transform ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
-      >
-        <div className="flex flex-col space-y-4 p-4">
-          {['Company', 'Platform', 'Products', 'Pages', 'Education'].map((item) => (
-            <div key={item}>
-              <a
-                href="#"
-                className="py-4 px-2 gradient-nav hover:text-red-600 font-serif block"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item}
-              </a>
-              <div className="ml-4">
-                {item === 'Company' && (
-                  <>
-                    <a href="/aboutUs" className="block py-2 px-4 text-red-900 hover:text-black">About Us</a>
-                    <a href="/contactUs" className="block py-2 px-4 text-red-900 hover:text-black">Contact us</a>
-                    <a href="/Careers" className="block py-2 px-4 text-red-900 hover:text-black">Careers</a>
-                  </>
-                )}
-                {item === 'Platform' && (
-                  <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Meta Trader 5</a>
-                )}
-                {item === 'Products' && (
-                  <>
-                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Forex</a>
-                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Indices</a>
-                    <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Shares</a>
-                  </>
-                )}
-                {item === 'Pages' && (
-                  <>
-                    <a href="/Team" className="block py-2 px-4 text-red-900 hover:text-black">Meet Team</a>
-                    <a href="/News" className="block py-2 px-4 text-red-900 hover:text-black">News</a>
-                  </>
-                )}
-                {item === 'Education' && (
-                  <a href="#" className="block py-2 px-4 text-red-900 hover:text-black">Market Insights</a>
-                )}
-              </div>
-            </div>
-          ))}
-          <a
-            href="#"
-            className="py-2 px-5 text-md text-white btn-hover-gradient rounded-lg block text-center"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            START INVESTING
-          </a>
-          </div>
-          </div> */}
-
-            {/* <div  style={{height:"500px"}}
-              className={`md:hidden fixed inset-0 bg-white shadow-lg transition-transform transform  ${
-                isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+            <div
+              style={{ height: "700px" }}
+              className={`md:hidden fixed inset-0  shadow-lg transition-transform transform  bg-black opacity-80  ${
+                isMobileMenuOpen ? "translate-x-0"  : "translate-x-full"
               }`}
             >
-              <div className="flex flex-col space-y-0 p-5">
-                {["Company", "Platform", "Products", "Pages", "Education"].map(
+              <div className="relative h-full flex flex-col space-y-0 p-5 ">
+                {/* Close Icon */}
+                <button
+                  className="absolute top-10 right-6 text-gray-600 "
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <svg
+                    className="w-8 h-8"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+                {/* Menu Items */}
+                {["Company", "Platform", "Products", "MeetTeam", "News"].map(
                   (item) => (
-                    <div key={item}>
+                    <div key={item} className="">
                       <button
-                        className="py-4 px-5 gradient-nav hover:text-red-600 font-serif w-full text-left"
+                        className="py-3  px-5 text-white  font-medium text-xl w-full text-left "
                         onClick={() => handleMenuClick(item)}
                       >
                         {item}
                       </button>
                       {activeMenu === item && (
-                        <div className="ml-4 space-y-2">
+                        <div className="ml-4 space-y-1">
                           {item === "Company" && (
                             <>
                               <a
                                 href="/aboutUs"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
+                                className="block py-2 px-4 font-medium text-white"
                               >
                                 About Us
                               </a>
                               <a
                                 href="/contactUs"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
+                                className="block py-2 px-4 font-medium text-white"
                               >
                                 Contact Us
-                              </a>
-                              <a
-                                href="/Careers"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
-                              >
-                                Careers
                               </a>
                             </>
                           )}
                           {item === "Platform" && (
-                            <a
-                              href="#"
-                              className="block py-2 px-4 text-red-900 hover:text-black"
-                            >
-                              Meta Trader 5
-                            </a>
+                            <>
+                              <a
+                                href="/MT4"
+                                className="block py-2 px-4 text-white font-medium"
+                              >
+                                Meta Trader 4
+                              </a>
+                              <a
+                                href="/MT5"
+                                className="block py-2 px-4 text-white font-medium"
+                              >
+                                Meta Trader 5
+                              </a>
+                            </>
                           )}
                           {item === "Products" && (
                             <>
                               <a
-                                href="#"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
+                                href="/forex"
+                                className="block py-2 px-4 text-white font-medium"
                               >
                                 Forex
                               </a>
                               <a
-                                href="#"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
+                                href="/indices"
+                                className="block py-2 px-4 text-white font-medium"
                               >
                                 Indices
                               </a>
-                              <a
-                                href="#"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
-                              >
-                                Shares
-                              </a>
                             </>
                           )}
-                          {item === "Pages" && (
-                            <>
-                              <a
-                                href="/Team"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
-                              >
-                                Meet Team
-                              </a>
-                              <a
-                                href="/News"
-                                className="block py-2 px-4 text-red-900 hover:text-black"
-                              >
-                                News
-                              </a>
-                            </>
-                          )}
-                          {item === "Education" && (
+                          {item === "MeetTeam" && (
                             <a
-                              href="#"
-                              className="block py-2 px-4 text-red-900 hover:text-black"
-                            >
-                              Market Insights
-                            </a>
+                              href="/Team"
+                              className="block py-2 px-4 text-white"
+                            ></a>
+                          )}
+                          {item === "News" && (
+                            <a
+                              href="/Newa"
+                              className="block py-2 px-4 text-white"
+                            ></a>
                           )}
                         </div>
                       )}
@@ -378,147 +337,13 @@ function Navbar() {
                   )
                 )}
                 <a
-                  href="#"
-                  className="py-2 px-5 text-md text-white btn-hover-gradient rounded-lg block text-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  href="/ConatctUs"
+                  className="py-2 px-5 text-md text-white btn-hover-gradient rounded-lg block text-center mt-4"
                 >
                   START INVESTING
                 </a>
               </div>
-            </div> */}
-
-
-            <div
-        style={{ height: "500px" }}
-        className={`md:hidden fixed inset-0 bg-white shadow-lg transition-transform transform ${
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <div className="relative h-full flex flex-col space-y-0 p-5">
-          {/* Close Icon */}
-          <button
-            className="absolute top-10 right-6 text-gray-600 "
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            <svg
-              className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-          {/* Menu Items */}
-          {["Company", "Platform", "Products", "Pages", "Education"].map(
-            (item) => (
-              <div key={item}>
-                <button
-                  className="py-4 px-5 gradient-nav hover:text-red-600 font-serif w-full text-left"
-                  onClick={() => handleMenuClick(item)}
-                >
-                  {item}
-                </button>
-                {activeMenu === item && (
-                  <div className="ml-4 space-y-2">
-                    {item === "Company" && (
-                      <>
-                        <a
-                          href="/aboutUs"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          About Us
-                        </a>
-                        <a
-                          href="/contactUs"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Contact Us
-                        </a>
-                        <a
-                          href="/Careers"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Careers
-                        </a>
-                      </>
-                    )}
-                    {item === "Platform" && (
-                      <a
-                        href="/Platform"
-                        className="block py-2 px-4 text-red-900 hover:text-black"
-                      >
-                        Meta Trader 5
-                      </a>
-                    )}
-                    {item === "Products" && (
-                      <>
-                        <a
-                          href="#"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Forex
-                        </a>
-                        <a
-                          href="#"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Indices
-                        </a>
-                        <a
-                          href="#"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Shares
-                        </a>
-                      </>
-                    )}
-                    {item === "Pages" && (
-                      <>
-                        <a
-                          href="/Team"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          Meet Team
-                        </a>
-                        <a
-                          href="/News"
-                          className="block py-2 px-4 text-red-900 hover:text-black"
-                        >
-                          News
-                        </a>
-                      </>
-                    )}
-                    {item === "Education" && (
-                      <a
-                        href="#"
-                        className="block py-2 px-4 text-red-900 hover:text-black"
-                      >
-                        Market Insights
-                      </a>
-                    )}
-                  </div>
-                )}
-              </div>
-            )
-          )}
-          <a
-            href="/ConatctUs"
-            className="py-2 px-5 text-md text-white btn-hover-gradient rounded-lg block text-center mt-4"
-          >
-            START INVESTING
-          </a>
-        </div>
-      </div>
-
-
-            
+            </div>
           </div>
         </div>
       </nav>

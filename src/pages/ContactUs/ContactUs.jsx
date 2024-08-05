@@ -117,7 +117,7 @@ function ContactUs() {
 
           {/* form start */}
 
-          <div className="md:mx-10 lg:mx-36 max-sm:mx-5  lg:flex gap-3 ">
+          {/* <div className="md:mx-10 lg:mx-36 max-sm:mx-5  lg:flex gap-3 ">
             <div className="mt-16  md:w-6/6 lg:w-4/6">
               <div className="bg-white shadow-md rounded-lg md:p-8 lg:p-8      max-sm:p-8  h-full ">
                 <h2 className="text-3xl font-serif gradient-text">
@@ -177,9 +177,78 @@ function ContactUs() {
                   src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/im-so-glad-you-asked-shot-of-a-young-man-using-a-headset-and-computer-in-a-modern-office-.jpg"
                   alt=""
                 />
-                {/* Overlay */}
                 <div className="absolute inset-0 bg-gray-950 bg-opacity-30"></div>
-                {/* Content */}
+                <div className="absolute bottom-10 left-0 flex flex-col justify-center items-center w-full h-auto pb-4">
+                  <h1 className="text-white text-3xl font-serif text-center">
+                    Effortless Connectivity, Financial Growth.
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <div className="md:mx-10 lg:mx-36 max-sm:mx-5  lg:flex gap-3 ">
+            <div className="mt-16  md:w-6/6 lg:w-4/6 ">
+              <div className="bg-white shadow-md rounded-lg md:p-8 lg:py-24     max-sm:p-8  h-full  ">
+                <div className="titles ">
+                  <h2 className="text-3xl font-serif gradient-text">
+                    Send us a message
+                  </h2>
+                  <p className="text-gray-600 mt-2">
+                    Porta fames platea habitasse aliquet mus molestie conubia
+                    ultrices lacus torquent augue sed dictum volutpat metus
+                    maximus feugiat suscipit eleifend a letius sequis mod.
+                  </p>
+                </div>
+                <form className="mt-8  py-0">
+                  <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 max-sm:gap-4 max-lg:gap-14 ">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      className="p-3 border rounded-md bg-gray-200 max-lg:h-16 "
+                    />
+                    <input
+                      type="text"
+                      placeholder="Your Company"
+                      className="p-3 border rounded-md bg-gray-200 max-lg:h-16"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Your Phone"
+                      className="p-3 border rounded-md bg-gray-200 md:mb-2  max-lg:h-16 max-lg:mb-14 max-sm:mb-2"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      className="p-3 border rounded-md bg-gray-200  max-lg:h-16 md:mb-2  max-lg:mb-14 max-sm:mb-2"
+                    />
+                  </div>
+                  <textarea
+                    placeholder="Your Subject"
+                    className="p-3 border rounded-md w-full  mt-4 bg-gray-200 md:mb-2  max-lg:mb-14 max-sm:mb-2 max-lg:h-16"
+                    rows="1"
+                  ></textarea>
+                  <textarea
+                    placeholder="Your Message"
+                    className="p-3 border rounded-md w-full mt-4 bg-gray-200  md:mb-2 lg:mb-0 max-lg:h-16"
+                    rows="5"
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className=" bg-gradient-to-br from-blue-500   to-red-900  text-white px-6 py-4 rounded-md mt-2 w-full"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div className="md:w-6/6 lg:w-2/6 mt-16 h-full">
+              <div className="relative overflow-hidden">
+                <img
+                  className="object-contain transform transition-transform duration-300 ease-in-out hover:translate-x-6 hover:scale-105"
+                  src="https://template.creativemox.com/finavest/wp-content/uploads/sites/11/2024/05/im-so-glad-you-asked-shot-of-a-young-man-using-a-headset-and-computer-in-a-modern-office-.jpg"
+                  alt=""
+                />
+                <div className="absolute inset-0 bg-gray-950 bg-opacity-30"></div>
                 <div className="absolute bottom-10 left-0 flex flex-col justify-center items-center w-full h-auto pb-4">
                   <h1 className="text-white text-3xl font-serif text-center">
                     Effortless Connectivity, Financial Growth.

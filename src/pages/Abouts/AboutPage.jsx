@@ -338,12 +338,12 @@ function Abouts() {
               <div className="absolute  bg-gradient-to-b from-transparent to-black"></div>
               <div className="image relative flex justify-center">
                 <img
-                  className="object-cover max-sm:w-96"
+                  className="object-cover max-sm:w-96 lg:w-72"
                   src={item.src}
                   alt=""
                 />
                 <div className="absolute mt-5 left-4 bg-yellow-400 w-8 h-1 group-hover:opacity-0"></div>
-                <h1 className="absolute bottom-4 transform text-white bg-black bg-opacity-50 px-2 py-1 rounded max-sm:text-center">
+                <h1 className="absolute bottom-4 transform text-white bg-black bg-opacity-50 px-2 py-1 rounded max-sm:text-center" style={{animationName:"zoomIn"}}>
                   {item.title}
                 </h1>
               </div>
